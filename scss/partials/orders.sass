@@ -1,0 +1,338 @@
+#main
+  .main__orders
+    +block(block, 100%, auto, none)
+    h2
+      +text($black, 30px, 600, left)
+      float: left
+      padding: 36px 0 80px 0
+      @media (max-width: $wt)
+        padding-bottom: 0
+    .hint
+      +text($grayText, 16px, 400, left)
+      display: inline-block
+      padding: 36px 0 0 40px
+      line-height: 46px
+      font-family: 'Open Sans', sans-serif
+      @media (max-width: $wt)
+        display: block
+        clear: left
+        padding: 0
+        max-width: 50%
+        line-height: 20px
+        padding: 30px 0 40px 0
+    .orders__total
+      float: right
+      height: auto
+      min-width: 293px
+      padding: 0 30px 10px 30px
+      border: 1px solid #e4e4e4
+      // margin-top: 30px
+      margin: 30px 0 30px 0
+      @media (max-width: $wt)
+        margin: 0 0 16px 0
+        position: absolute
+        top: 40px
+        right: 0
+      p
+        display: inline-block
+        &.total__price
+          .price__big
+            +text($black, 50px, 300, left)
+            font-family: 'Open Sans', sans-serif
+          .price__small
+            +text($black, 25px, 300, left)
+            font-family: 'Open Sans', sans-serif
+          .price__name
+            +text($black, 16px, 600, left)
+            font-family: 'Open Sans', sans-serif
+            margin-left: 6px
+        &.total__text
+          +text($black, 16px, 600, left)
+          font-family: 'Open Sans', sans-serif
+          margin-right: 22px
+      .total__unpaid
+        position: relative
+        &:before
+          +pseudo-elem(100%, 1px, #e4e4e4)
+          position: absolute
+          left: -4px
+          top: 0
+        p
+          &.total__price
+            .price__big
+              font-size: 20px
+            .price__small
+              font-size: 16px
+            .price__name
+              font-size: 14px
+              color: $grayText
+              margin-left: 16px
+          &.total__text
+            color: $grayText
+            font-size: 14px
+            margin-right: 56px
+    .orders__new-order
+      +block(inline-block, auto, auto, none)
+      +calc(width, '100% - 2px')
+      border: 1px solid $color
+      margin-bottom: 30px
+      a
+        +block(block, 100%, 100%, none)
+        .new-order__button
+          +block(inline-block, 43px, 43px, #fff)
+          +border-radius(50%)
+          float: left
+          border: 3px solid $color
+          position: relative
+          margin: 7px 0 7px 16px
+          +duration($time)
+          @media (max-width: $wt)
+            width: 35px
+            height: 35px
+          &:before
+            +pseudo-elem(3px, 23px, $color)
+            +duration($time)
+            +border-radius(3px)
+            position: absolute
+            left: 21px
+            top: 21px
+            margin: -11px 0 0 -1px
+            @media (max-width: $wt)
+              left: 17px
+              top: 19px
+              height: 19px
+          &:after
+            +pseudo-elem(23px, 3px, $color)
+            +duration($time)
+            +border-radius(3px)
+            position: absolute
+            left: 10px
+            top: 20px
+            @media (max-width: $wt)
+              left: 8px
+              top: 16px
+              width: 19px
+        .new-order__text
+          +text($color, 25px, 600, left)
+          display: inline-block
+          line-height: 62px
+          margin-left: 26px
+          @media (max-width: $wt)
+            font-size: 20px
+            line-height: 55px
+  .orders__list
+    +block(block, 100%, auto, none)
+    padding-bottom: 20px
+    .orders__slider
+      width: 100%
+      display: none
+      padding: 0
+      margin: 0
+      background: $gray
+      position: relative
+    .list__item
+      +block(block, 100%, auto, $gray)
+      padding: 0 20px
+      +calc(width, '100% - 40px')
+      +display(flex)
+      margin-top: 20px
+      justify-content: space-between
+      cursor: pointer
+      @media (max-width: $wt)
+        +calc(width, '100% - 20px')
+        padding: 0 10px
+      & *
+        line-height: 20px
+        padding: 20px 0
+      span, p
+        +text($black, 16px, 400, left)
+        font-family: 'Open Sans', sans-serif
+        &.item__date
+          font-weight: 600
+        &.item__adress
+          margin-right: 120px
+          @media (max-width: $wds)
+            margin-right: 0
+        &.item__name
+          margin-left: 120px
+          @media (max-width: $wds)
+            margin-left: 0
+        &.item__status
+          font-weight: 600
+  .orders__current-order
+    +block(block, 100%, auto, $gray)
+    +calc(width, '100% - 40px')
+    margin-bottom: 30px
+    padding: 20px 20px 30px 20px
+    .current-order__title
+      .title__order, .title__status, .title__date
+        +text($black, 16px, 600, left)
+        display: inline-block
+        &.title__order
+          margin-left: 8px
+        &.title__status
+          margin-left: 30px
+        &.title__date
+          float: right
+          margin-right: 8px
+    .current-order__table
+      +block(block, 100%, auto, none)
+      border-top: 1px solid #e4e4e4
+      margin: 30px 0
+      padding: 0
+      & *
+        padding: 0
+      .table__title, .table__body
+        +block(block, 100%, auto, none)
+        +display(flex)
+        border-bottom: 1px solid #e4e4e4
+        .col
+          position: relative
+          border-right: 1px solid #e4e4e4
+          background: #fff
+          box-sizing: border-box
+          padding: 0 10px
+          @each $name, $width in $col-width
+            &-#{$name}
+              width: $width
+          &:first-child
+            border-left: 1px solid #e4e4e4
+          @media (max-width: $wt)
+            padding: 0 4px
+        &.table__title
+          .col
+            p
+              line-height: 20px
+              padding: 9px 0
+              font:
+                size: 16px
+                weight: 600
+                family: 'Open Sans', sans-serif
+        &.table__body
+          .col
+            min-height: 66px
+            p
+              line-height: 20px
+              padding: 9px 0
+              font:
+                size: 16px
+                weight: 400
+                family: 'Open Sans', sans-serif
+              @media (max-width: $wt)
+                word-wrap: break-word
+            .image-holder
+              position: absolute
+              left: 0
+              top: 0
+              right: 0
+              bottom: 0
+              margin: auto
+              width: 90%
+              height: 90%
+              // +border-radius(50%)
+              overflow: hidden
+              background: $gray
+              img
+                position: absolute
+                left: 0
+                top: 0
+                right: 0
+                bottom: 0
+            input
+              height: 30px
+              width: 34px
+              padding: 0 4px
+              border: 1px solid #c9ccdc
+              margin-top: 8px
+              +border-radius(4px)
+              -moz-appearance: textfield
+              &::-webkit-inner-spin-button
+                display: none
+            .minus, .plus
+              width: 24px
+              height: 24px
+              background: $color
+              display: inline-block
+              +border-radius(4px)
+              cursor: pointer
+              position: relative
+              +transform(translateY, '(12px)')
+              &.minus
+                &:before
+                  +pseudo-elem(12px, 2px, #fff)
+                  position: absolute
+                  left: 50%
+                  top: 50%
+                  margin: -1px 0 0 -6px
+              &.plus
+                &:before, &:after
+                  +pseudo-elem(12px, 2px, #fff)
+                  position: absolute
+                  left: 50%
+                  top: 50%
+                  margin: -1px 0 0 -6px
+                &:after
+                  width: 2px
+                  height: 12px
+                  margin: -6px 0 0 -1px
+            .icon
+              +block(block, 34px, 34px, $color)
+              +border-radius(50%)
+              +duration(300ms)
+              overflow: hidden
+              position: absolute
+              left: 0
+              top: 0
+              right: 0
+              bottom: 0
+              margin: auto
+              cursor: pointer
+              &:before
+                +pseudo-elem(18px, 18px, url(../images/pencil.png) no-repeat)
+                +background(size, 100%, 100%)
+                position: absolute
+                left: 50%
+                top: 50%
+                margin: -9px 0 0 -9px
+              &:hover
+                background: $true
+    .current-order__info
+      +block(block, 100%, auto, none)
+      position: relative
+      .info__total
+        position: absolute
+        left: 24px
+        bottom: 0
+        .total__main
+          +text($black, 20px, 600, left)
+          font-family: 'Open Sans', sans-serif
+        .total__secondary
+          +text($black, 16px, 600, left)
+          font-family: 'Open Sans', sans-serif
+      input
+        &:not([type="submit"])
+          +block(block, 100%, 58px, #fff)
+          +calc(width, '100% - 54px')
+          +text($black, 16px, 400, left)
+          font-family: 'Open Sans', sans-serif
+          padding: 0 26px
+          border: 1px solid #e4e4e4
+          +placeholder($black)
+          margin-bottom: 30px
+        &.half
+          width: 45%
+          float: left
+          &.right
+            float: right
+        &[type="submit"]
+          +block(block, 183px, 43px, #fff)
+          +duration($time)
+          +text($color, 16px, 400, center)
+          font-family: 'Open Sans', sans-serif
+          border: 1px solid $color
+          margin: 86px auto 0 auto
+          cursor: pointer
+          padding: 0
+          &:hover
+            background: $color
+            color: #fff

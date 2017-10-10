@@ -1,0 +1,25 @@
+.kopvillkor{
+  @include block(block, 100%, auto, none);
+  padding: 20px 0;
+  h2{
+    @include text($color, 35px, 600, left);
+    padding: 0 0 40px 0;
+    position: relative;
+  }
+  h3{
+    @include text($black, 25px, 600, left);
+    padding: 16px 0;
+  }
+  p, a{
+    @include text($grayText, 16px, 400, left);
+    font-family: 'Open Sans', sans-serif!important;
+    padding: 8px 0;
+    line-height: 24px;
+    &.bold{
+      font-weight: 600;
+    }
+    &.color{
+      color: $color;
+    }
+  }
+}

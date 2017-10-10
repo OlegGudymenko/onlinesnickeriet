@@ -1,0 +1,156 @@
+#main{
+  .main__gallery{
+    @include block(block, 100%, auto, $gray);
+    padding: 40px 0 30px 0;
+    .gallery__title{
+      @include text($black, 25px, 600, left);
+      @media (max-width: $wt){
+        font-size: 18px;
+      }
+    }
+    /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+    ul{ //styles for custom list of images
+      @include block(block, 100%, auto, $gray);
+      @include display(flex);
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      height: auto!important;
+      @media (max-width: $wds){
+        // justify-content: space-around;
+      }
+      li{
+        @include block(block, 294px!important, 294px!important, none);
+        overflow: visible!important;
+        margin: 25px 51px 25px 0!important;
+        padding: 0!important;
+        position: relative!important;
+        left: auto!important;
+        top: auto!important;
+        border: none!important;
+        &:first-child{
+          // margin-right: 52px!important;
+        }
+        &:nth-child(4n){
+          margin-right: 0!important;
+        }
+        @media (max-width: $wds){
+          &:nth-child(4n){
+              margin-right: 36px!important;
+          }
+          margin: 20px 36px 20px 0!important;
+          &:nth-child(3n){
+              margin-right: 0!important;
+          }
+
+        }
+        @media (max-width: $wt){
+          width: auto!important;
+          height: auto!important;
+          margin: 25px 0!important;
+          &:nth-child(2n){
+            margin: 25px 0 25px 58px!important;
+          }
+        }
+        .image-holder-gallery, .gs-pin-details{
+          @include block(block, 294px!important, 294px!important, none);
+          overflow: hidden;
+          position: relative;
+          @include duration(300ms);
+          @media (max-width: $wt){
+            width: 330px!important;
+            height: 330px!important;
+            img{
+              min-width: 100%;
+              min-height: 100%;
+            }
+          }
+        }
+        img{
+          position: absolute;
+          left: 0;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          margin: auto;
+        }
+        &:hover{
+          .image-holder-gallery{
+            @include transform(scale, '(1.06)');
+          }
+        }
+      }
+    }
+    /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+    .gallery__more{
+      @include text($color, 20px, 400, right);
+      @include block(block, auto, auto, none);
+      float: right;
+      position: relative;
+      -webkit-text-shadow: 1px 0 #fff, -1px 0 #fff;
+      -ms-text-shadow: 1px 0 #fff, -1px 0 #fff;
+      -moz-text-shadow: 1px 0 #fff, -1px 0 #fff;
+      -o-text-shadow: 1px 0 #fff, -1px 0 #fff;
+      text-shadow: 1px 0 #fff, -1px 0 #fff;
+      z-index: 2;
+      margin: 32px 0 50px 0;
+      &:after{
+        @include pseudo-elem(100%, 1px, $color);
+        position: absolute;
+        bottom: 3px;
+        left: 0;
+        z-index: -1;
+      }
+      @media (max-width: $wt){
+        font-size: 18px;
+      }
+    }
+    .gallery__bottom{
+      @include block(block, 100%, auto, none);
+      position: relative;
+      padding: 30px 0;
+      margin: 0 auto;
+      clear: both;
+      .bg{
+        display: block;
+        @include calc(width, '100% - 2px');
+        @include calc(height, '100% - 2px');
+        border: 1px solid #e4e4e4;
+        position: absolute;
+        left: 1px;
+        top: 1px;
+        z-index: 1;
+        @include transform(scale, '(0.96)');
+        @include duration(300ms);
+      }
+      h5{
+        @include text($black, 25px, 500, center);
+        position: relative;
+        z-index: 2;
+        @media (max-width: $wt){
+          font-size: 22px;
+        }
+      }
+      p{
+        @include text($black, 20px, 400, center);
+        position: relative;
+        z-index: 2;
+        @media (max-width: $wt){
+          font-size: 18px;
+        }
+      }
+      a{
+        @include block(block, 100%, 100%, none);
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 2;
+      }
+      &:hover{
+        .bg{
+          @include transform(scale, '(1)');
+          background: #f0f0f0;
+        }
+      }
+    }
+  }
+}

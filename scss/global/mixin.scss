@@ -1,0 +1,82 @@
+// mixin for vendor transition-duration
+@mixin duration($sec){
+  -webkit-transition-duration: $sec;
+  -moz-transition-duration: $sec;
+  -ms-transition-duration: $sec;
+  -o-transition-duration: $sec;
+  transition-duration: $sec;
+}
+// mixin for vendor transform rotate
+@mixin rotate($deg){
+  -webkit-transform: rotate($deg);
+  -moz-transform: rotate($deg);
+  -ms-transform: rotate($deg);
+  -o-transform: rotate($deg);
+  transform: rotate($deg);
+}
+//
+@mixin transform($arg, $val){
+  -webkit-transform: #{$arg}(#{$val});
+  -moz-transform: #{$arg}(#{$val});
+  -ms-transform: #{$arg}(#{$val});
+  -o-transform: #{$arg}(#{$val});
+  transform: #{$arg}(#{$val});
+}
+// mixin calc
+@mixin calc($arg, $value){
+  #{$arg}: -ms-calc(#{$value});
+  #{$arg}: -webkit-calc(#{$value});
+  #{$arg}: -moz-calc(#{$value});
+  #{$arg}: calc(#{$value});
+}
+// mixin border-radius
+@mixin border-radius($value){
+  -webkit-border-radius: $value;
+  -moz-border-radius: $value;
+  -ms-border-radius: $value;
+  border-radius: $value;
+}
+// mixin for pseudo-element (~:after,~:before)
+@mixin pseudo-elem($width, $height, $bg){
+  content: "";
+  display: block;
+  width: $width;
+  height: $height;
+  background: $bg;
+}
+// mixin for text
+@mixin text($color, $size, $weight, $align){
+  color: $color;
+  font-size: $size;
+  font-weight: $weight;
+  text-align: $align;
+}
+// mixin for bacground-size
+@mixin background($arg, $x, $y){
+  -webkit-background-#{$arg}: $x $y;
+  -moz-background-#{$arg}: $x $y;
+  -ms-background-#{$arg}: $x $y;
+  -o-background-#{$arg}: $x $y;
+  background-#{$arg}: $x $y;
+}
+// mixin for flexbox
+@mixin display($flex){
+  display: -webkit-box;
+  display: -ms-#{$flex}box;
+  display: -webkit-#{$flex};
+  display: #{$flex};
+}
+//mixin for blocks
+@mixin block($display, $width, $height, $bg){
+  display: $display;
+  width: $width;
+  height: $height;
+  background: $bg;
+}
+// plceholder
+@mixin placeholder($arg){
+  &::-webkit-input-placeholder {color:$arg;}
+  &::-moz-placeholder          {color:$arg;}/* Firefox 19+ */
+  &:-moz-placeholder           {color:$arg;}/* Firefox 18- */
+  &:-ms-input-placeholder      {color:$arg;}
+}

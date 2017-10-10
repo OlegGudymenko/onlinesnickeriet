@@ -1,0 +1,178 @@
+.contacts{
+  @include block(inline-block, 100%, auto, none);
+  padding: 20px 0 40px 0;
+  @media (max-width: $wt){
+    @include display(flex);
+  }
+  .contacts__sidebar{
+    float: right;
+    width: 345px;
+    min-height: 600px;
+    @media (max-width: $wds){
+      width: 315px;
+    }
+    iframe{
+      max-width: 100%;
+    }
+    .title{
+      @include text($black, 20px, 400, left);
+      text-transform: uppercase;
+      padding: 30px 0;
+    }
+    ul{
+      display: block;
+      li{
+        padding: 10px 0 10px 30px;
+        position: relative;
+        font-family: "Open Sans", sans-serif!important;
+        font-size: 16px;
+        a{
+          color: $color;
+          font-size: 16px;
+          font-family: 'Open Sans', sans-serif!important;
+        }
+        .li_icon{
+          width: 20px;
+          height: 20px;
+          position: absolute;
+          text-align: center;
+          top: 10px;
+          left: 4px;
+          .icon{
+            font-family: 'icomoon', sans-serif;
+            display: block;
+            font-size: 17px;
+            color: $color;
+            line-height: 22px;
+            margin: 0;
+            // background: $color;
+            width: 100%;
+            height: 100%;
+            &.icon-mobile3{
+              &:before{
+                content: "\e6cb";
+              }
+            }
+            &.icon-mail2{
+              &:before{
+                content: "\e6ce";
+              }
+            }
+            &.icon-location2{
+              &:before{
+                content: "\e6dc";
+              }
+            }
+            &.icon-clock3{
+              &:before{
+                content: "\e703";
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .contacts__content{
+    float: left;
+    width: 915px;
+    padding: 20px;
+    @media (max-width: $wds){
+      width: 600px;
+    }
+    @media (max-width: $wt){
+      width: 100%;
+      padding-left: 0;
+    }
+    h2{
+      @include text($black, 25px, 600, left);
+    }
+    p{
+      @include text($grayText, 16px, 400, left);
+    }
+    .text{
+      @include text($grayText, 16px, 400, left);
+      line-height: 24px;
+      padding: 30px 0;
+      font-family: 'Open Sans', sans-serif!important;
+      margin-bottom: 30px;
+      position: relative;
+      &:after{
+        @include pseudo-elem(60px, 1px, #e4e4e4);
+        position: absolute;
+        left: 0;
+        bottom: 0;
+      }
+    }
+    .captcha{
+      display: block;
+      margin: 30px 0 16px 0;
+    }
+    input{
+      &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        color: $grayText;
+      }
+      &::-moz-placeholder { /* Firefox 19+ */
+        color: $grayText;
+      }
+      &:-ms-input-placeholder { /* IE 10+ */
+        color: $grayText;
+      }
+      &:-moz-placeholder { /* Firefox 18- */
+        color: $grayText;
+      }
+      &.inform, &.enter-captcha{
+        font-size: 16px;
+        display: block;
+        @include calc(width, '100% - 18px');
+        padding: 8px;
+        background: $gray;
+        border: 1px solid #e4e4e4;
+        margin: 0 0 20px 0;
+        font-family: "Open Sans", sans-serif!important;
+      }
+      &.enter-captcha{
+        width: 130px;
+      }
+      &[type="submit"]{
+        display: block;
+        width: 183px;
+        height: 43px;
+        border: 1px solid $color;
+        background: #fff;
+        @include text($color, 16px, 400, center);
+        font-family: 'Open Sans', sans-serif;
+        @include duration(300ms);
+        cursor: pointer;
+        &:hover{
+          color: #fff;
+          background: $color;
+        }
+      }
+    }
+    textarea{
+      font-size: 16px;
+      display: block;
+      @include calc(width, '100% - 18px');
+      height: 90px;
+      padding: 8px;
+      background: $gray;
+      border: 1px solid #e4e4e4;
+      resize: vertical;
+      margin: 10px 0 30px 0;
+      font-family: 'Open Sans', sans-serif!important;
+      &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        color: $grayText;
+      }
+      &::-moz-placeholder { /* Firefox 19+ */
+        color: $grayText;
+      }
+      &:-ms-input-placeholder { /* IE 10+ */
+        color: $grayText;
+      }
+      &:-moz-placeholder { /* Firefox 18- */
+        color: $grayText;
+      }
+    }
+  }
+}

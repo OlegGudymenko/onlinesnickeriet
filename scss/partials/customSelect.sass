@@ -1,0 +1,33 @@
+.customSelect
+  border: 1px solid #e4e4e4
+  +calc(width, '100% - 2px')
+  height: 58px
+  background: #fff
+  margin-bottom: 30px
+  .selectedValue
+    +calc(width, '100% - 52px')
+    +text($black, 16px, 400, left)
+    font-family: 'Open Sans', sans-serif!important
+    height: 100%
+    padding: 0 26px
+    line-height: 58px
+  .selectValueWrap
+    .caret
+      +block(block, 28px, 20px, none)
+      right: 30px
+      &:before, &:after
+        +pseudo-elem(17px, 2px, $black)
+        position: absolute
+        left: 0
+        top: 50%
+        +rotate(45deg)
+      &:after
+        left: 11px
+        +rotate(-45deg)
+  .selectList
+    dd
+      +text($black, 16px, 400, left)
+      padding: 0 26px
+      &.hovered
+        background: $color
+        color: #fff

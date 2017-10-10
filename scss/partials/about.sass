@@ -1,0 +1,90 @@
+#main
+  padding-bottom: 0
+  .main__about__title
+    +text($black, 35px, 600, center)
+    padding: 60px 0 20px 0
+  .main__about__text
+    +text($black, 25px, 600, center)
+    padding-bottom: 38px
+  .main__about__content
+    +block(block, 100%, auto, #f9f9f9)
+    padding: 60px 0 130px 0
+    .about__wrap
+      position: relative
+      +block(block, 100%, auto, none)
+      +calc(width, '100% - 42px')
+      padding-left: 42px
+      &:before
+        +pseudo-elem(3px, 100%, $color)
+        position: absolute
+        left: 0
+        top: 0
+    p
+      +text($grayText, 25px, 500, left)
+      position: relative
+      padding: 26px 0
+      &:before
+        +pseudo-elem(24px, 24px, $color)
+        +border-radius(50%)
+        position: absolute
+        left: -52px
+        top: 29px
+      &.padding-top-64
+        margin-top: 64px
+    ul
+      +block(block, 100%, auto, none)
+      padding-left: 42px
+      li
+        +text($grayText, 20px, 400, left)
+        font-family: 'Open Sans', sans-serif
+        padding: 14px 0
+  .about__form
+    +block(block, 100%, auto, none)
+    padding: 24px 0 0 0
+    form
+      +display(flex)
+      justify-content: space-between
+      flex-wrap: wrap
+      span.wpcf7-not-valid-tip
+        position: relative
+        bottom: 130px
+      input
+        &:not([type="submit"])
+          +block(inline-block, 548px, 66px, #fff)
+          border: 1px solid $color
+          margin-bottom: 42px
+          padding: 0 26px
+          font:
+            size: 20px
+            family: 'Open Sans', sans-serif
+          &:-webkit-input-placeholder
+            color: $grayText
+          &::-webkit-input-placeholder
+            color: $grayText
+          &:-moz-placeholder
+            color: $grayText
+          &::-moz-placeholder
+            color: $grayText
+          &:-ms-placeholder
+            color: $grayText
+          &::-ms-placeholder
+            color: $grayText
+          &:-o-placeholder
+            color: $grayText
+          &::-o-placeholder
+            color: $grayText
+          @media (max-width: $wds)
+            +calc(width, '100% - 54px')
+        &[type="submit"]
+          +block(block, 100%, 64px, $color)
+          +text(#fff, 35px, 600, center)
+          cursor: pointer
+      .about__form__button
+        +block(block, 100%, auto, none)
+        position: relative
+        &:before
+          +pseudo-elem(24px, 24px, $color)
+          +border-radius(50%)
+          position: absolute
+          left: -52px
+          top: 20px

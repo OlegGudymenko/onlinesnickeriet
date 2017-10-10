@@ -1,0 +1,92 @@
+.main__log-in
+  +block(block, 100%, auto, none)
+  @media (max-width: $wml)
+    overflow-y: auto
+  .log-in__logo
+    +block(block, 291px, 59px, url(../images/logo.png))
+    +background(size, 100%, 100%)
+    margin: 0 auto 60px auto
+    position: relative
+    &:after
+      content: "beta"
+      position: absolute
+      top: 16px
+      right: 4px
+      width: 40px
+      height: 16px
+      color: #fff
+      background: $color
+      text-align: center
+      line-height: 16px
+      font-size: 11px
+      font-weight: 700
+      text-transform: uppercase
+      font-family: 'Open Sans', sans-serif
+      border-radius: 4px
+    @media (max-width: $wml)
+      margin-bottom: 20px
+  form
+    +block(block, 548px, auto, none)
+    margin: 0 auto
+    @media (max-width: $wml)
+      width: 100%
+    input
+      &:not([type="submit"])
+        +block(block, 510px, 64px, none)
+        margin: 0 0 35px 0
+        font:
+          size: 20px
+          family: 'Open Sans', sans-serif
+        &:-webkit-input-placeholder
+          color: $grayText
+        &::-webkit-input-placeholder
+          color: $grayText
+        &:-moz-placeholder
+          color: $grayText
+        &::-moz-placeholder
+          color: $grayText
+        &:-ms-placeholder
+          color: $grayText
+        &::-ms-placeholder
+          color: $grayText
+        &:-o-placeholder
+          color: $grayText
+        &::-o-placeholder
+          color: $grayText
+        padding: 0 18px
+        border: 1px solid $color
+        @media (max-width: $wml)
+          width: 288px
+          padding: 0 10px
+      &[type="submit"]
+        +block(block, 100%, 64px, $color)
+        +text(#fff, 35px, 600, center)
+        cursor: pointer
+        @media (max-width: $wml)
+          width: 310px
+  .log-in__block-for-link
+    +block(block, 100%, auto, none)
+    text-align: center
+    margin-top: 140px
+    @media (max-width: $wml)
+      margin-top: 20px
+    a
+      +text($color, 20px, 400, center)
+      display: inline-block
+      position: relative
+      &:before
+        +pseudo-elem(100%, 1px, $color)
+        position: absolute
+        bottom: 3px
+        left: 0
+        z-index: 1
+        @media (max-width: $wml)
+          display: none
+      .link__text
+        -webkit-text-shadow: 1px 0 0 #fff, -1px 0 0 #fff
+        -moz-text-shadow: 1px 0 0 #fff, -1px 0 0 #fff
+        -ms-text-shadow: 1px 0 0 #fff, -1px 0 0 #fff
+        -o-text-shadow: 1px 0 0 #fff, -1px 0 0 #fff
+        text-shadow: 1px 0 0 #fff, -1px 0 0 #fff
+        position: relative
+        z-index: 2
