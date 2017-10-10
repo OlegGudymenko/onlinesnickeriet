@@ -5,9 +5,7 @@
   .header__top{
     @include block(block, 100%, 34px, $gray);
     border-bottom: 1px solid #e4e4e4;
-    @media (max-width: $wml){
-      display: none;
-    }
+    display: none;
     .layout *{
       color: $grayText;
       float: right;
@@ -15,10 +13,7 @@
       font-family: 'Open Sans', sans-serif;
     }
     .top__log-in{
-      margin-right: 28px;
-      @media (max-width: $wml){
-        margin-right: 0;
-      }
+      margin-right: 0;
     }
     .top__social{
       padding: 0 30px;
@@ -41,26 +36,20 @@
     }
     .top__e-mail{
       margin-right: 30px;
-      @media (max-width: $wml){
-        display: none;
-      }
+      display: none;
     }
   }
   .header__bot{
     @include block(block, 100%, 77px, none);
     border-bottom: 1px solid #e4e4e4;
-    @media (max-width: $wds){
-    }
-    @media (max-width: $wml){
-      background: #f0f0f0;
-      height: 50px;
-    }
+    background: #f0f0f0;
+    height: 50px;
     .header__logo{
-      @include block(inline-block, 291px, 59px, url(../images/logo.png));
+      @include block(inline-block, 166px, 35px, url(../images/logo.png));
       @include background(size, 100%, 100%);
       float: left;
-      margin: 9px 0;
       position: relative;
+      margin: 8px 0;
       &:after{
         content: "beta";
         position: absolute;
@@ -78,129 +67,41 @@
         font-family: 'Open Sans', sans-serif;
         border-radius: 4px;
       }
-      @media (max-width: $wds){
-        width: 200px;
-        height: 41px;
-        margin: 18px 0;
-      }
-      @media (max-width: $wt){
-        position: absolute;
-        margin: auto auto;
-        left: 0;
-        top: 0;
-        right: 0;
-        bottom: 0;
-      }
-      @media (max-width: $wml){
-        float: left;
-        position: relative;
-        margin: 8px 0;
-        width: 166px;
-        height: 35px;
-      }
     }
     #nav{
-      @include block(inline-block, 580px, auto, none);
-      @include display(inline-flex);
-      @include calc(height, '100% - 20px');
-      padding-top: 20px;
-      justify-content: space-around;
+      @include block(inline-block, 100%, auto, rgba(255,255,255, 1));
       margin: 0 0 0 160px;
-      @media (max-width: $wds){
-        margin-left: 40px;
-        width: 500px;
-      }
-      @media (max-width: $wt){
-        display: none;
-        width: 260px;
-        flex-wrap: wrap;
-        background: rgba(255,255,255, 1);
-        position: absolute;
-        top: 68px;
-        left: 0;
-        margin-left: 0;
-        height: auto;
-        padding-top: 0;
-        border: 1px solid #e4e4e4;
-        @include border-radius(6px);
-        &.active{
-          @include display(flex);
-        }
-      }
-      @media (max-width: $wml){
-        width: 100%;
-        flex-wrap: wrap;
-        background: rgba(255,255,255, 1);
-        position: absolute;
-        top: 51px;
-        right: 0;
-        left: auto;
-        height: auto;
-        padding-top: 0;
-        border: none;
-        // @include border-radius(0);
-        &.active{
-          @include display(flex);
-        }
+      width: 100%;
+      position: absolute;
+      top: 51px;
+      right: 0;
+      left: auto;
+      padding-top: 0;
+      border: none;
+      display: none;
+      &.active{
+        @include display(inline-block);
       }
       li{
-        @include block(inline-block, auto, 57px, none);
-        line-height: 57px;
-        @media (max-width: $wt){
-          display: block;
-          width: 100%;
-          line-height: 24px;
-          text-align: center;
-          height: 28px;
-          margin: 0;
-          padding: 10px 16px;
-          &:hover{
-            background: rgba(0,0,0,.1);
-          }
-        }
-        @media (max-width: $wml){
-          display: block;
-          width: 100%;
-          line-height: 1;
-          height: auto;
-          text-align: center;
-          padding: 20px 0;
-        }
+        @include block(inline-block, 100%, auto, none);
+        display: block;
+        width: 100%;
+        line-height: 1;
+        text-align: center;
+        padding: 20px 0;
         a{
-          @include text($black, 16px, 400, center);
-          @include block(block, 100%, 100%, none);
+          @include text($black, 22px, 600, center);
+          @include block(inline-block, auto, 100%, none);
           position: relative;
           @include duration(300ms);
-          -webkit-text-shadow: -.5px 0 #fff, 0 -.5px #fff;
-          -ms-text-shadow: -.5px 0 #fff, 0 -.5px #fff;
-          -moz-text-shadow: -.5px 0 #fff, 0 -.5px #fff;
-          -o-text-shadow: -.5px 0 #fff, 0 -.5px #fff;
-          text-shadow: -.5px 0 #fff, 0 -.5px #fff;
           font-family: 'Open Sans', sans-serif;
           text-decoration: none!important;
-          &:hover{
-            -webkit-text-shadow: -.5px 0 #000, 0 -.5px #000;
-            -ms-text-shadow: -.5px 0 #000, 0 -.5px #000;
-            -moz-text-shadow: -.5px 0 #000, 0 -.5px #000;
-            -o-text-shadow: -.5px 0 #000, 0 -.5px #000;
-            text-shadow: -.5px 0 #000, 0 -.5px #000;
-          }
-          @media (max-width: $wt){
-            display: inline-block;
-            width: auto;
-          }
-          @media (max-width: $wml){
-            display: inline-block;
-            width: auto;
-            font-size: 22px;
-            font-weight: 600;
-            -webkit-text-shadow: none!important;
-            -ms-text-shadow: none!important;
-            -moz-text-shadow: none!important;
-            -o-text-shadow: none!important;
-            text-shadow: none!important;
-            font-family: 'Exo', sans-serif;
-          }
+          -webkit-text-shadow: none!important;
+          -ms-text-shadow: none!important;
+          -moz-text-shadow: none!important;
+          -o-text-shadow: none!important;
+          text-shadow: none!important;
+          font-family: 'Exo', sans-serif;
         }
         &.active, &.current-menu-item{
           a{
@@ -222,28 +123,15 @@
       }
     }
     .hamburger{
-      float: left;
-      width: 24px;
+      float: right;
+      width: 29px;
       height: 24px;
-      display: none;
-      margin: 34px 0 0 0;
+      margin: 16px 0 0 0;
+      cursor: pointer;
       .line{
-        @include block(block, 100%, 4px, $black);
-        @include border-radius(2px);
-        margin: 4px 0;
-        @media (max-width: $wml){
-          height: 3px;
-          margin: 0 0 6px 0;
-          border-radius: 30%;
-        }
-      }
-      @media (max-width: $wt){
-        display: block;
-      }
-      @media (max-width: $wml){
-        float: right;
-        width: 29px;
-        margin-top: 16px;
+        @include block(block, 100%, 3px, $black);
+        @include border-radius(30%);
+        margin: 0 0 6px 0;
       }
     }
     .header__become-partner{
@@ -256,13 +144,11 @@
       @include duration(500ms);
       font-family: 'Open Sans', sans-serif;
       margin-right: 10px;
+      display: none;
       &:hover{
         background: $color!important;
         color: #fff;
         transition: background-color .5s, color .5s;
-      }
-      @media (max-width: $wml){
-        display: none;
       }
     }
     .header__entered{
@@ -270,20 +156,13 @@
       padding: 0 40px 0 0;
       position: relative;
       margin-top: 22px;
-      @media (max-width: $wds){
-        // display: none;
-      }
-      @media (max-width: $wml){
       display: none;
-      }
       .entered__button{
         @include text($black, 16px, 400, left);
         line-height: 55px;
         position: relative;
         font-family: 'Open Sans', sans-serif;
-        @media (max-width: $wml){
-          font-size: 0;
-        }
+        font-size: 0;
         &:after, &:before{
           @include pseudo-elem(12px, 2px, $black);
           position: absolute;
@@ -329,9 +208,7 @@
       float: right;
       width: 30px;
       height: 100%;
-      @media (max-width: $wds){
-        display: none;
-      }
+      display: none;
       .cart-notification{
         position: absolute;
         width: auto;

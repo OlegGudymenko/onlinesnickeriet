@@ -2,46 +2,17 @@
   @include block(block, 100%, auto, #272727);
   padding: 45px 0;
   color: #777;
-  @media (max-width: $wml){
-    display: none;
-  }
+  display: none;
   .footer__container{
     @include display(flex);
     justify-content: space-between;
-    @media (max-width: $wds){
-      // flex-wrap: wrap;
-    }
-    @media (max-width: $wt){
-      flex-wrap: wrap;
-    }
     .container__item{
       @include block(block, 412px, auto, none);
       &:first-child{
-        @media (max-width: $wds){
-          width: 280px;
-        }
-        @media (max-width: $wt){
-          width: 100%;
-          .item__text{
-            display: none;
-          }
-          .logotipe{
-            display: none;
-          }
-        }
       }
       &:nth-child(2){
-        @media (max-width: $wds){
-          width: 360px;
-        }
-        @media (max-width: $wt){
-          width: 412px;
-        }
       }
       &:last-child{
-        @media (max-width: $wds){
-          width: 280px;
-        }
       }
       .logotipe{
         @include block(block, 291px, 62px, url(../images/logo-white.png));

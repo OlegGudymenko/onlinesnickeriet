@@ -1,79 +1,43 @@
 #main{
   .list__title{
-    @include block(inline-block, auto, auto, none);
-    @include text($black, 30px, 600, left);
+    @include block(block, 100%, auto, none);
+    @include text(#fff, 18px, 600, center);
     float: left;
-    padding: 65px 0 20px 0;
-    margin: 0!important;
-    @media (max-width: $wt){
-      @include calc(width, '100% - 2px');
-      cursor: pointer;
-      background: #fff;
-      color: $color;
-      border: 1px solid $color;
-      padding: 6px 0;
-      text-align: center;
-      margin: 20px 0!important;
-      &.active{
-        background: $color;
-        color: #fff;
-      }
-    }
-    @media (max-width: $wml){
-      font-size: 18px;
-      margin: 20px 0 0 0!important;
-    }
+    padding: 10px 0;
+    margin: 20px 0 0 0!important;
+    background: $color;
+    cursor: pointer;
   }
   .construction__tabs{
     float: left;
     clear: left;
     margin: 0 0 60px 0!important;
-    min-height: 462px;
     background: $gray;
-    padding: 10px 20px 0 20px;
-    @include border-radius(5px);
-    @media (max-width: $wt){
-      min-height: auto;
-      width: 100%;
-      text-align: center;
-      padding: 0;
-      float: none;
-      display: none;
-      margin: 0!important;
-      overflow: hidden!important;
-    }
-    @media (max-width: $wml){
-      width: 298px;
-      border: 1px solid $color;
-      border-top: none;
-      @include border-radius(0);
-    }
+    padding: 0;
+    border: 1px solid $color;
+    border-top: none;
+    @include border-radius(0);
+    display: none;
+    width: 280px;
     li{
-      @include block(block, 280px, auto, none);
+      @include block(block, 100%, auto, none);
       cursor: pointer;
-      margin: 20px 0!important;
-      min-height: 50px;
       position: relative;
       overflow: hidden;
-      @media (max-width: $wt){
-        @include calc(width, '100% - 2px');
-        margin: 10px 0!important;
-      }
-      @media (max-width: $wml){
-        margin: 0!important;
-        width: 100%;
-      }
+      margin: 0!important;
       .toggle{
         position: relative;
         z-index: 2;
-        @include calc(width, '100% - 2px');
-        height: 48px;
         display: block;
-        border: 1px solid $color;
-        @include text($color, 25px, 600, center);
-        line-height: 48px;
+        @include text($color, 18px, 600, center);
         background: #fff;
         margin: 0!important;
+        font-family: 'Open Sans', sans-serif;
+        color: $header__top_text;
+        border: none;
+        width: 100%;
+        height: auto;
+        padding: 6px 0;
         &:after, &:before{
           @include pseudo-elem(100%, 10px, $gray);
           position: absolute;
@@ -82,17 +46,7 @@
           z-index: 4;
           border-left: 1px solid $gray;
           border-right: 1px solid $gray;
-        }
-        @media (max-width: $wml){
-          font-size: 18px;
-          font-family: 'Open Sans', sans-serif;
-          color: $header__top_text;
-          border: none;
-          width: 100%;
-          height: 50px;
-          &:before, &:after{
-            display: none;
-          }
+          display: none;
         }
       }
       .img-bg{
@@ -116,10 +70,6 @@
         position: relative;
         z-index: 0;
         padding-bottom: 10px;
-        @media (max-width: $wt){
-          width: 100%;
-          text-align: left;
-        }
         li{
           @include block(block, 280px, auto, #fff);
           min-height: 172px;
@@ -139,10 +89,6 @@
             position: absolute;
             left: 0;
             top: 0;
-          }
-          @media (max-width: $wt){
-            display: inline-block;
-            margin: 10px 34px!important;
           }
           p{
             @include text($black, 20px, 400, left);
@@ -195,18 +141,12 @@
       justify-content: flex-start;
       padding: 28px 0 50px 0;
       margin-bottom: 0!important;
-      @media (max-width: $wds){
-        justify-content: space-around;
-      }
       li{
         @include block(block, 366px, 239px, none);
         border: 2px solid #e4e4e4;
         padding: 16px;
         overflow: hidden;
         margin-right: 62px;
-        @media (max-width: $wds){
-          margin-right: 0;
-        }
         &:last-child{
           margin-right: 0;
         }
@@ -238,28 +178,12 @@
     }
   }
   .main__constructor_container{
-    @include block(block, 980px, auto, none);
+    @include block(block, 280px, auto, none);
     float: right;
-    margin: 0 auto;
-    margin-top: -99px;
-    height: 400px;
     background: #ebedec;
-    border: 1px solid #000;
-    @media (max-width: $wds){
-      width: 630px;
-    }
-    @media (max-width: $wt){
-      width: 100%;
-      float: none;
-      margin: 0 0 40px 0;
-      clear: both;
-    }
-    @media (max-width: $wml){
-      position: relative;
-      width: 298px;
-      margin-top: 20px;
-      display: inline-block;
-    }
+    position: relative;
+    margin-top: 20px;
+    display: inline-block;
     .portlet-body{
       padding: 0!important;
       .canvas-container{

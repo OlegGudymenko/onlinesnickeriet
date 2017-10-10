@@ -2,127 +2,64 @@
   @include calc(min-height, '100vh - 113px');
   @include block(block, 100%, auto, none);
   padding: 0 0 40px 0;
-  padding-top: 113px; //padding for fixed header
-  @media (max-width: $wml){
-    padding-top: 51px;
-  }
+  padding-top: 51px; //padding for fixed header
   .main__text-wrap{
-    @include block(block, 100%, auto, $gray);
-    @media (max-width: $wml){
-      background: none;
-    }
+    @include block(block, 100%, auto, none);
   }
   .main__text__layout{
-    @include block(block, 1026px, auto, none);
+    @include block(block, 300px, auto, none);
     margin: 0 auto;
-    padding: 30px 0;
-    @media (max-width: $wds){
-      width: 960px;
-    }
-    @media (max-width: $wt){
-      width: 720px
-    }
-    @media (max-width: $wml){
-      width: 300px;
-      padding: 0 10px;
-    }
+    padding: 0 10px;
     h2{
       @include text($black, 30px, 600, left);
       text-transform: uppercase;
       display: inline-block;
-      @media (max-width: $wds){
-        font-size: 28px;
-      }
-      @media (max-width: $wt){
-        display: inline-block;
-        text-align: left;
-        font-size: 22px;
-      }
-      @media (max-width: $wml){
-        text-transform: capitalize;
-        position: relative;
-        padding: 70px 0 0 0;
-      }
+      text-transform: capitalize;
+      position: relative;
+      padding: 70px 0 0 0;
       a{
-        color: #fff;
-        padding: 0 10px;
-        background-image: linear-gradient(to left, $color 0%, #c2e9fb 50%, #00d9d3 100%);
-        transition: 0.5s;
-        background-size: 200% auto;
-        background-position: right center;
-        &:hover{
-          background-position: left center;
-        }
-        @media (max-width: $wml){
-          background: none;
-          color: $black;
-          font-size: 45px;
-          font-weight: 600;
-          padding: 0;
-          position: absolute;
-          left: 0;
-          top: 14px;
-        }
+        color: $black;
+        padding: 0;
+        background: none;
+        @include text($black, 45px, 600, left);
+        position: absolute;
+        left: 0;
+        top: 14px;
       }
     }
     p{
       @include text($black, 30px, 600, right);
       display: inline-block;
       margin-left: 50px;
-      @media (max-width: $wds){
-        font-size: 28px;
-      }
-      @media (max-width: $wt){
-        display: inline-block;
-        text-align: left;
-        margin-left: 4px;
-        font-size: 22px;
-      }
-      @media (max-width: $wml){
-        display: none;
-      }
+      display: none;
     }
   }
   .main__text__closeable{
     @include block(block, 100%, auto, none);
-    margin: 30px 0;
+    margin: 0;
     position: relative;
-    padding: 3px 0;
-    @media (max-width: $wml){
-      margin: 0;
-      padding: 16px 0 0 0;
-    }
+    padding: 16px 0 0 0;
     p{
-      @include text($black, 25px, 600, left);
+      @include text($header__top_text, 18px, 400, left);
+      display: none;
       .bold{
         color: $color;
       }
       &.mobile-text{
-        display: none;
+        display: block;
+        padding-bottom: 60px;
       }
-      @media (max-width: $wt){
-        font-size: 18px;
-      }
-      @media (max-width: $wml){
-        font-weight: 400;
-        color: $header__top_text;
-        display: none;
-        &.mobile-text{
-          display: block;
-          padding-bottom: 60px;
-          a{
-            position: absolute;
-            left: 0;
-            bottom: 0;
-            width: 300px;
-            height: 45px;
-            background: $color;
-            color: #fff;
-            text-align: center;
-            font-weight: 600;
-            line-height: 45px;
-          }
-        }
+      a{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 300px;
+        height: 45px;
+        background: $color;
+        color: #fff;
+        text-align: center;
+        font-weight: 600;
+        line-height: 45px;
       }
     }
   }
@@ -130,16 +67,7 @@
     @include block(inline-block, 100%, auto, none);
     @include display(flex);
     justify-content: space-between;
-    @media (max-width: $wds){
-      // flex-wrap: wrap;
-    }
-    @media (max-width: $wt){
-      flex-wrap: wrap;
-      justify-content: space-between;
-    }
-    @media (max-width: $wml){
-      display: none;
-    }
+    display: none;
     .top-things__item{
       float: left;
       a{
@@ -160,9 +88,6 @@
           @include text(#fff, 25px, 600, center);
           line-height: 60px;
           padding-bottom: 20px;
-          @media (max-width: $wt){
-            font-size: 22px;
-          }
           .child-text{
             padding: 0 50px;
             @include text(#fff, 16px, 400, left);
@@ -173,9 +98,6 @@
             opacity: 0;
             position: relative;
             top: 40px;
-            @media (max-width: $wds){
-              padding: 0 10px 6px 10px;
-            }
           }
         }
         .shadow{
@@ -197,75 +119,25 @@
         a{
           width: 647px;
           height: 500px;
-          @media (max-width: $wds){
-            width: 474px;
-            height: 367px;
-          }
-          @media (max-width: $wt){
-            width: 720px;
-            height: 556px;
-            margin-bottom: 10px;
-            img{
-              width: 100%;
-              height: 100%;
-            }
-          }
         }
       }
       &.small{
         position: relative;
-        @media (max-width: $wt){
-          margin-right: 1px;
-        }
         a{
           width: 333px;
           height: 245px;
-          @media (max-width: $wds){
-            width: 248px;
-            height: 183px;
-          }
-          @media (max-width: $wt){
-            width: 350px;
-            height: 287px;
-            img{
-              min-width: 100%;
-              min-height: 100%;
-            }
-          }
           p{
             // height: 100%;
           }
           &:nth-child(2){
             height: 239px;
-            @media (max-width: $wds){
-              // width: 260px;
-              height: 178px;
-            }
-            @media (max-width: $wt){
-              height: 277px;
-            }
           }
         }
       }
       &.medium{
-        @media (max-width: $wt){
-          margin-left: 1px;
-        }
         a{
           width: 312px;
           height: 500px;
-          @media (max-width: $wds){
-            width: 228px;
-            height: 367px;
-          }
-          @media (max-width: $wt){
-            width: 358px;
-            height: 574px;
-            img{
-              min-width: 100%;
-              min-height: 100%;
-            }
-          }
         }
       }
     }
@@ -276,15 +148,7 @@
     margin-top: 20px;
     height: 222px;
     overflow: hidden;
-    @media (max-width: $wds){
-      margin-top: 6px;
-    }
-    @media (max-width: $wt){
-      margin-top: 10px;
-    }
-    @media (max-width: $wml){
-      display: none;
-    }
+    display: none;
     a{
       @include block(block, 100%, 100%, none);
       position: relative;
@@ -305,9 +169,6 @@
         position: absolute;
         left: 0;
         @include calc(top, '100% - 60px');
-        @media (max-width: $wt){
-          font-size: 22px;
-        }
         .child-text{
           display: block;
           // padding: 0 50px;
@@ -341,29 +202,17 @@
   }
   h4{
     @include text($black, 30px, 600, left);
-    border-bottom: 2px solid $color;
     display: inline-block;
     padding: 14px 0 8px 0;
-    margin-top: 40px;
-    @media (max-width: $wt){
-      font-size: 22px;
-    }
-    @media (max-width: $wml){
-      margin-top: 30px;
-      border: none;
-    }
+    margin-top: 30px;
+    border: none;
   }
   .main__services{
     @include block(inline-block, 100%, auto, $gray);
     padding: 40px 0 30px 0;
-    @media (max-width: $wml){
-      display: none;
-    }
+    display: none;
     .services__title{
       @include text($black, 25px, 600, left);
-      @media (max-width: $wt){
-        font-size: 20px;
-      }
     }
     .services__content{
       @include block(block, 100%, auto, none);
@@ -371,37 +220,22 @@
         float: left;
         width: 662px;
         padding-bottom: 46px;
-        @media (max-width: $wds){
-          float: none;
-          display: block;
-          margin: 0 auto;
-          width: 100%;
-        }
         .left__media{
           @include block(block, 658px, 348px, none);
           border: 2px solid #e4e4e4;
           margin: 46px 0 35px 0;
-          @media (max-width: $wds){
-            @include calc(width, '100% - 4px');
-          }
         }
         .left__text{
           @include block(block, 100%, auto, none);
           h5{
             @include text($black, 25px, 600, left);
             margin-bottom: 30px;
-            @media (max-width: $wt){
-              font-size: 20px;
-            }
           }
           p{
             @include text($grayText, 16px, 400, left);
             margin-bottom: 42px;
             font-family: 'Open Sans', sans-serif;
             padding-right: 40px;
-            @media (max-width: $wds){
-              margin-bottom: 30px;
-            }
           }
           a{
             @include text($color, 16px, 400, center);
@@ -411,10 +245,6 @@
             margin: 94px auto 10px auto;
             @include duration($time);
             font-family: 'Open Sans', sans-serif;
-            @media (max-width: $wds){
-              margin: 0 auto 10px auto;
-              float: left;
-            }
             &:hover{
               background: $color;
               color: #fff;
@@ -429,15 +259,6 @@
         justify-content: space-around;
         flex-wrap: wrap;
         padding: 16px 0 0 0;
-        @media (max-width: $wds){
-          float: none;
-          width: 100%;
-          flex-wrap: nowrap;
-        }
-        @media (max-width: $wt){
-          flex-wrap: wrap;
-          justify-content: space-between;
-        }
         .right__item{
           float: left;
           width: 304px;
@@ -445,32 +266,14 @@
           margin-top: 30px;
           min-height: 340px;
           position: relative;
-          @media (max-width: $wds){
-            margin: 0 5px;
-            min-height: 300px;
-            &:nth-child(2n){
-              // margin-left: 80px;
-            }
-          }
           .image-holder{
             @include block(block, 304px, 174px, none);
             overflow: hidden;
-            @media (max-width: $wds){
-              max-width: 100%;
-              width: auto;
-              height: 132px;
-            }
-            @media (max-width: $wt){
-              height: 174px;
-            }
           }
           .container__title{
             @include text($black, 20px, 400, left);
             margin-top: 12px;
             font-family: 'Open Sans', sans-serif;
-            @media (max-width: $wt){
-              font-size: 18px;
-            }
           }
           .container__text{
             @include text($grayText, 16px, 400, left);
@@ -478,10 +281,6 @@
             left: 0;
             bottom: 6px;
             font-family: 'Open Sans', sans-serif;
-            @media (max-width: $wds){
-              position: relative;
-              bottom: 0;
-            }
           }
         }
       }
@@ -509,18 +308,12 @@
           @include text($black, 25px, 600, center);
           position: relative;
           z-index: 2;
-          @media (max-width: $wt){
-            font-size: 22px;
-          }
         }
         p{
           @include text($black, 20px, 400, center);
           font-family: 'Open Sans', sans-serif;
           position: relative;
           z-index: 2;
-          @media (max-width: $wt){
-            font-size: 18px;
-          }
         }
         a{
           @include block(block, 100%, 100%, none);

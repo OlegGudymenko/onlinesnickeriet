@@ -1,0 +1,79 @@
+.main__log-in
+  +block(block, 100%, auto, none)
+  overflow-y: auto
+  .log-in__logo
+    +block(block, 291px, 59px, url(../images/logo.png))
+    +background(size, 100%, 100%)
+    margin: 0 auto 20px auto
+    position: relative
+    &:after
+      content: "beta"
+      position: absolute
+      top: 16px
+      right: 4px
+      width: 40px
+      height: 16px
+      color: #fff
+      background: $color
+      text-align: center
+      line-height: 16px
+      font-size: 11px
+      font-weight: 700
+      text-transform: uppercase
+      font-family: 'Open Sans', sans-serif
+      border-radius: 4px
+  form
+    +block(block, 100%, auto, none)
+    margin: 0 auto
+    input
+      &:not([type="submit"])
+        +block(block, 288px, 64px, none)
+        margin: 0 0 35px 0
+        font:
+          size: 20px
+          family: 'Open Sans', sans-serif
+        &:-webkit-input-placeholder
+          color: $grayText
+        &::-webkit-input-placeholder
+          color: $grayText
+        &:-moz-placeholder
+          color: $grayText
+        &::-moz-placeholder
+          color: $grayText
+        &:-ms-placeholder
+          color: $grayText
+        &::-ms-placeholder
+          color: $grayText
+        &:-o-placeholder
+          color: $grayText
+        &::-o-placeholder
+          color: $grayText
+        padding: 0 10px
+        border: 1px solid $color
+      &[type="submit"]
+        +block(block, 310px, 64px, $color)
+        +text(#fff, 35px, 600, center)
+        cursor: pointer
+  .log-in__block-for-link
+    +block(block, 100%, auto, none)
+    text-align: center
+    margin-top: 20px
+    a
+      +text($color, 20px, 400, center)
+      display: inline-block
+      position: relative
+      &:before
+        +pseudo-elem(100%, 1px, $color)
+        position: absolute
+        bottom: 3px
+        left: 0
+        z-index: 1
+        display: none
+      .link__text
+        -webkit-text-shadow: 1px 0 0 #fff, -1px 0 0 #fff
+        -moz-text-shadow: 1px 0 0 #fff, -1px 0 0 #fff
+        -ms-text-shadow: 1px 0 0 #fff, -1px 0 0 #fff
+        -o-text-shadow: 1px 0 0 #fff, -1px 0 0 #fff
+        text-shadow: 1px 0 0 #fff, -1px 0 0 #fff
+        position: relative
+        z-index: 2

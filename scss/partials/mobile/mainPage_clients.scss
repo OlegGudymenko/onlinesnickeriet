@@ -1,9 +1,7 @@
 #main{
   .main__clients{
     @include block(block, 100%, auto, none);
-    @media (max-width: $wml){
-      display: none;
-    }
+    display: none;
     ul{
       @include block(block, 100%, auto, none);
       @include display(flex);
@@ -12,29 +10,14 @@
       li{
         @include block(block, 392px, auto, none);
         border-bottom: 2px solid $color;
-        &:last-child{
-          @media (max-width: $wt){
-            display: none;
-          }
-        }
-        @media (max-width: $wds){
-          width: 316px;
-        }
         .image-holder{
           @include block(block, 392px, 262px, none);
           overflow: hidden;
-          @media (max-width: $wds){
-            width: 100%;
-            height: 211px;
-          }
         }
         .li__title{
           @include text($black, 20px, 400, center);
           margin: 18px 0 0 0;
           font-family: 'Open Sans', sans-serif;
-          @media (max-width: $wt){
-            font-size: 18px;
-          }
         }
         .li__text{
           @include text($grayText, 16px, 400, left);
@@ -61,24 +44,16 @@
   .main__bottom-text{
     @include block(block, 100%, auto, none);
     padding-bottom: 40px;
-    @media (max-width: $wml){
-      display: none;
-    }
+    display: none;
     h6{
       @include text($color, 30px, 600, center);
       text-transform: uppercase;
       padding: 26px 0 20px 0;
-      @media (max-width: $wt){
-        font-size: 22px;
-      }
     }
     .bottom-text__title{
       @include text($black, 20px, 400, center);
       padding-bottom: 20px;
       font-family: 'Open Sans', sans-serif;
-      @media (max-width: $wt){
-        font-size: 18px;
-      }
     }
     .bottom-text__text{
       @include text($grayText, 16px, 400, center);
@@ -108,7 +83,7 @@
       @include text($black, 18px, 400, center);
       text-transform: uppercase;
       position: relative;
-      width: 1026px;
+      width: auto;
       margin: 0 auto;
       padding-top: 26px;
       font-family: 'Open Sans', sans-serif;
@@ -117,12 +92,6 @@
         position: absolute;
         left: 0;
         top: 0;
-      }
-      @media (max-width: $wds){
-        width: auto;
-      }
-      @media (max-width: $wt){
-        width: auto;
       }
     }
     .bottom-text__site{

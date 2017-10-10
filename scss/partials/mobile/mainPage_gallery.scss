@@ -2,14 +2,9 @@
   .main__gallery{
     @include block(block, 100%, auto, $gray);
     padding: 40px 0 30px 0;
-    @media (max-width: $wml){
-      display: none;
-    }
+    display: none;
     .gallery__title{
       @include text($black, 25px, 600, left);
-      @media (max-width: $wt){
-        font-size: 18px;
-      }
     }
     /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
     ul{ //styles for custom list of images
@@ -18,9 +13,6 @@
       flex-wrap: wrap;
       justify-content: flex-start;
       height: auto!important;
-      @media (max-width: $wds){
-        // justify-content: space-around;
-      }
       li{
         @include block(block, 294px!important, 294px!important, none);
         overflow: visible!important;
@@ -36,37 +28,11 @@
         &:nth-child(4n){
           margin-right: 0!important;
         }
-        @media (max-width: $wds){
-          &:nth-child(4n){
-              margin-right: 36px!important;
-          }
-          margin: 20px 36px 20px 0!important;
-          &:nth-child(3n){
-              margin-right: 0!important;
-          }
-
-        }
-        @media (max-width: $wt){
-          width: auto!important;
-          height: auto!important;
-          margin: 25px 0!important;
-          &:nth-child(2n){
-            margin: 25px 0 25px 58px!important;
-          }
-        }
         .image-holder-gallery{
           @include block(block, 294px!important, 294px!important, none);
           overflow: hidden;
           position: relative;
           @include duration(300ms);
-          @media (max-width: $wt){
-            width: 330px!important;
-            height: 330px!important;
-            img{
-              min-width: 100%;
-              min-height: 100%;
-            }
-          }
         }
         img{
           position: absolute;
@@ -103,9 +69,6 @@
         left: 0;
         z-index: -1;
       }
-      @media (max-width: $wt){
-        font-size: 18px;
-      }
     }
     .gallery__bottom{
       @include block(block, 100%, auto, none);
@@ -129,17 +92,11 @@
         @include text($black, 25px, 500, center);
         position: relative;
         z-index: 2;
-        @media (max-width: $wt){
-          font-size: 22px;
-        }
       }
       p{
         @include text($black, 20px, 400, center);
         position: relative;
         z-index: 2;
-        @media (max-width: $wt){
-          font-size: 18px;
-        }
       }
       a{
         @include block(block, 100%, 100%, none);

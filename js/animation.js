@@ -84,7 +84,3 @@ $( '.top' ).on( 'mouseenter', 'a', function() {
       $('.up').css({opacity: 0});
     }
   });
-  // page fragor animation on click
-  $('.fragor').on('click', '.li__title', function(){
-    $(this).closest('li').toggleClass('active').find('div.li__text').slideToggle(350);
-  });
