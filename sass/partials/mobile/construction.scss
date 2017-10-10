@@ -178,18 +178,23 @@
     }
   }
   .main__constructor_container{
-    @include block(block, 280px, auto, none);
+    @include block(block, 100%, auto, none);
     float: right;
-    background: #ebedec;
+    background: transparent;
     position: relative;
-    margin-top: 20px;
+    margin-top: 10px;
     display: inline-block;
     .portlet-body{
       padding: 0!important;
       display: inline-block;
       overflow: hidden;
-      width: 210px;
+      width: 230px;
+      margin-top:49px;
+      position: relative;
+      top: 1px;
       .canvas-container{
+        border-top: 0!important;
+        border-left: 0!important;
         box-shadow: 0 0 0 1px $color!important;
       }
     }

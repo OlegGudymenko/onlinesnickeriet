@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$header__top_text".
-        on line 54 of /home/oleg/Applications/online_snieckeriet/onlinesnickeriet/sass/partials/mobile/customConstructor.scss
+        on line 64 of /home/oleg/Applications/online_snieckeriet/onlinesnickeriet/sass/partials/mobile/customConstructor.scss
 
-49:   background: none;
-50:   border: none;
-51:   span{
-52:     font-size: 18px;
-53:     font-weight: 600;
-54:     color: $header__top_text;
-55:   }
-56:   i{
-57:     color: $header__top_text;
-58:   }
-59: }
+59:   border: none;
+60:   padding: 0;
+61:   span{
+62:     font-size: 18px;
+63:     font-weight: 600;
+64:     color: $header__top_text;
+65:   }
+66:   i{
+67:     color: $header__top_text;
+68:   }
+69: }
 
 Backtrace:
-/home/oleg/Applications/online_snieckeriet/onlinesnickeriet/sass/partials/mobile/customConstructor.scss:54
+/home/oleg/Applications/online_snieckeriet/onlinesnickeriet/sass/partials/mobile/customConstructor.scss:64
 /usr/lib/ruby/vendor_ruby/sass/script/tree/variable.rb:49:in `_perform'
 /usr/lib/ruby/vendor_ruby/sass/script/tree/node.rb:50:in `perform'
 /usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:395:in `visit_prop'
@@ -82,4 +82,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$header__top_text\".\A         on line 54 of /home/oleg/Applications/online_snieckeriet/onlinesnickeriet/sass/partials/mobile/customConstructor.scss\A \A 49:   background: none;\A 50:   border: none;\A 51:   span{\A 52:     font-size: 18px;\A 53:     font-weight: 600;\A 54:     color: $header__top_text;\A 55:   }\A 56:   i{\A 57:     color: $header__top_text;\A 58:   }\A 59: }"; }
+  content: "Error: Undefined variable: \"$header__top_text\".\A         on line 64 of /home/oleg/Applications/online_snieckeriet/onlinesnickeriet/sass/partials/mobile/customConstructor.scss\A \A 59:   border: none;\A 60:   padding: 0;\A 61:   span{\A 62:     font-size: 18px;\A 63:     font-weight: 600;\A 64:     color: $header__top_text;\A 65:   }\A 66:   i{\A 67:     color: $header__top_text;\A 68:   }\A 69: }"; }

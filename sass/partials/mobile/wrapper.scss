@@ -9,7 +9,7 @@
   .layout{
     @include block(block, 300px, 100%, none);
     margin: 0 auto;
-    padding: 0 10px;
+    padding: 0;
     &.center{
       min-height: 100vh;
       @include display(flex);
