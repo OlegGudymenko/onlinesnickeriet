@@ -49,8 +49,14 @@ $( '.top' ).on( 'mouseenter', 'a', function() {
       $('.header__entered').removeClass('active');
     }
     if ( ev.target.closest('div').className === 'hamburger' || ev.target.className === 'hamburger') {
+      $('.header__bot').addClass('active');
+      $('div.hamburger').addClass('active');
       $('#nav').toggleClass('active');
+      $('#main').toggleClass('hidden');
     } else if ( ev.target.closest('ul') === null || !ev.target.id === 'nav' ) {
+      $('.header__bot').removeClass('active');
+      $('div.hamburger').removeClass('active');
+      $('#main').removeClass('hidden');
       $('#nav').removeClass('active');
     }
   });

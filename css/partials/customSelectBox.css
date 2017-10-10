@@ -1,0 +1,77 @@
+/*
+Error: Undefined variable: "$black".
+        on line 185 of /home/oleg/Applications/online_snieckeriet/onlinesnickeriet/sass/partials/customSelectBox.scss
+
+180: 	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#444444), to(#222222));
+181: 	background-image: -webkit-linear-gradient(top, #444444, #222222);
+182: 	background-image: -o-linear-gradient(top, #444444, #222222);
+183: 	background-image: linear-gradient(to bottom, #444444, #222222);
+184: 	background-repeat: repeat-x;
+185: 	border-color: #222222 #222222 $black;
+186: 	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+187: 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff444444', endColorstr='#ff222222', GradientType=0);
+188: 	filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+189: }
+190: 
+
+Backtrace:
+/home/oleg/Applications/online_snieckeriet/onlinesnickeriet/sass/partials/customSelectBox.scss:185
+/usr/lib/ruby/vendor_ruby/sass/script/tree/variable.rb:49:in `_perform'
+/usr/lib/ruby/vendor_ruby/sass/script/tree/node.rb:50:in `perform'
+/usr/lib/ruby/vendor_ruby/sass/script/tree/list_literal.rb:63:in `block in _perform'
+/usr/lib/ruby/vendor_ruby/sass/script/tree/list_literal.rb:63:in `map'
+/usr/lib/ruby/vendor_ruby/sass/script/tree/list_literal.rb:63:in `_perform'
+/usr/lib/ruby/vendor_ruby/sass/script/tree/node.rb:50:in `perform'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:395:in `visit_prop'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:36:in `visit'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:158:in `block in visit'
+/usr/lib/ruby/vendor_ruby/sass/stack.rb:79:in `block in with_base'
+/usr/lib/ruby/vendor_ruby/sass/stack.rb:115:in `with_frame'
+/usr/lib/ruby/vendor_ruby/sass/stack.rb:79:in `with_base'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:158:in `visit'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:431:in `block (2 levels) in visit_rule'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:431:in `map'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:431:in `block in visit_rule'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:179:in `with_environment'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:429:in `visit_rule'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:36:in `visit'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:158:in `block in visit'
+/usr/lib/ruby/vendor_ruby/sass/stack.rb:79:in `block in with_base'
+/usr/lib/ruby/vendor_ruby/sass/stack.rb:115:in `with_frame'
+/usr/lib/ruby/vendor_ruby/sass/stack.rb:79:in `with_base'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:158:in `visit'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:52:in `map'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:52:in `visit_children'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:179:in `with_environment'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:166:in `visit_children'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:36:in `block in visit'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:186:in `visit_root'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:36:in `visit'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:157:in `visit'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:8:in `visit'
+/usr/lib/ruby/vendor_ruby/sass/tree/root_node.rb:36:in `css_tree'
+/usr/lib/ruby/vendor_ruby/sass/tree/root_node.rb:20:in `render'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:278:in `render'
+/usr/lib/ruby/vendor_ruby/compass/import-once/engine.rb:17:in `block in render'
+/usr/lib/ruby/vendor_ruby/compass/import-once/engine.rb:29:in `with_import_scope'
+/usr/lib/ruby/vendor_ruby/compass/import-once/engine.rb:16:in `render'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:492:in `update_stylesheet'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:209:in `each'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:293:in `watch'
+/usr/lib/ruby/vendor_ruby/compass/sass_compiler.rb:46:in `watch!'
+/usr/lib/ruby/vendor_ruby/compass/commands/watch_project.rb:41:in `perform'
+/usr/lib/ruby/vendor_ruby/compass/commands/base.rb:18:in `execute'
+/usr/lib/ruby/vendor_ruby/compass/commands/project_base.rb:19:in `execute'
+/usr/lib/ruby/vendor_ruby/compass/exec/sub_command_ui.rb:43:in `perform!'
+/usr/lib/ruby/vendor_ruby/compass/exec/sub_command_ui.rb:15:in `run!'
+/usr/bin/compass:30:in `block in <main>'
+/usr/bin/compass:44:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined variable: \"$black\".\A         on line 185 of /home/oleg/Applications/online_snieckeriet/onlinesnickeriet/sass/partials/customSelectBox.scss\A \A 180: 	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#444444), to(#222222));\A 181: 	background-image: -webkit-linear-gradient(top, #444444, #222222);\A 182: 	background-image: -o-linear-gradient(top, #444444, #222222);\A 183: 	background-image: linear-gradient(to bottom, #444444, #222222);\A 184: 	background-repeat: repeat-x;\A 185: 	border-color: #222222 #222222 $black;\A 186: 	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);\A 187: 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff444444', endColorstr='#ff222222', GradientType=0);\A 188: 	filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);\A 189: }\A 190: "; }

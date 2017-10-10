@@ -1,0 +1,197 @@
+#main{
+  .list__title{
+    @include block(block, 100%, auto, none);
+    @include text(#fff, 18px, 600, center);
+    float: left;
+    padding: 10px 0;
+    margin: 10px 0 0 0!important;
+    background: $color;
+    cursor: pointer;
+  }
+  .construction__tabs{
+    float: left;
+    clear: left;
+    margin: 0 0 60px 0!important;
+    background: $gray;
+    padding: 0;
+    border: 1px solid $color;
+    border-top: none;
+    @include border-radius(0);
+    display: none;
+    width: 280px;
+    li{
+      @include block(block, 100%, auto, none);
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+      margin: 0!important;
+      .toggle{
+        position: relative;
+        z-index: 2;
+        display: block;
+        @include text($color, 18px, 600, center);
+        background: #fff;
+        margin: 0!important;
+        font-family: 'Open Sans', sans-serif;
+        color: $header__top_text;
+        border: none;
+        width: 100%;
+        height: auto;
+        padding: 6px 0;
+        &:after, &:before{
+          @include pseudo-elem(100%, 10px, $gray);
+          position: absolute;
+          left: -1px;
+          bottom: -11px;
+          z-index: 4;
+          border-left: 1px solid $gray;
+          border-right: 1px solid $gray;
+          display: none;
+        }
+      }
+      .img-bg{
+        position: absolute;
+        left: 0;
+        top: 0;
+        @include calc(width, '100% - 2px');
+        height: 48px;
+        border: none;
+        overflow: hidden;
+        z-index: 1;
+      }
+      .inner{
+        overflow: hidden;
+        overflow-y: scroll;
+        display: none;
+        margin: 0 !important;
+        max-height: 530px;
+        width: 330px;
+        padding-right: 50px;
+        position: relative;
+        z-index: 0;
+        padding-bottom: 10px;
+        li{
+          @include block(block, 280px, auto, #fff);
+          min-height: 172px;
+          position: relative;
+          overflow: hidden;
+          margin: 10px 0!important;
+          &:after{
+            @include pseudo-elem(30px, 30px, url(../images/active.png) no-repeat);
+            position: absolute;
+            right: 5px;
+            bottom: 5px;
+            display: none;
+          }
+          &:before{
+            @include pseudo-elem(100%, 100%, none);
+            z-index: 3;
+            position: absolute;
+            left: 0;
+            top: 0;
+          }
+          p{
+            @include text($black, 20px, 400, left);
+            font-family: 'Open Sans', sans-serif;
+            padding: 0 0 4px 10px;
+            margin: 0!important;
+          }
+          .image-holder{
+            width: 264px;
+            min-height: 104px;
+            margin: 0 auto;
+            padding: 10px 0;
+            @include display(flex);
+            justify-content: center;
+            align-items: center;
+          }
+          &.active{
+            &:after{
+              display: block;
+            }
+          }
+        }
+      }
+      &.active{
+        height: auto;
+        .toggle{
+          background: $color;
+          color: #fff;
+        }
+        ul{
+          height: 100%;
+        }
+      }
+    }
+  }
+  .tabs__container{
+    @include block(block, 100%, auto, none);
+    .main__gallery{/*style for disable background of this block on page GALLERY*/
+      background: none;
+    }
+    & > div{
+      display: none;
+      overflow: hidden;
+    }
+    .div__title{
+      @include text($black, 25px, 500, left);
+    }
+    ul{
+      @include display(flex);
+      justify-content: flex-start;
+      padding: 28px 0 50px 0;
+      margin-bottom: 0!important;
+      li{
+        @include block(block, 366px, 239px, none);
+        border: 2px solid #e4e4e4;
+        padding: 16px;
+        overflow: hidden;
+        margin-right: 62px;
+        &:last-child{
+          margin-right: 0;
+        }
+        .image-holder{
+          @include block(block, 100%, 208px, none);
+          position: relative;
+          overflow: hidden;
+          img{
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+          }
+        }
+        .li__title{
+          @include text($black, 25px, 600, left);
+        }
+        &.active{
+          -webkit-box-shadow: 0 0 0 8px $color inset;
+          -moz-box-shadow: 0 0 0 8px $color inset;
+          -ms-box-shadow: 0 0 0 8px $color inset;
+          -o-box-shadow: 0 0 0 8px $color inset;
+          box-shadow: 0 0 0 8px $color inset;
+          border: 2px solid $color;
+        }
+      }
+    }
+  }
+  .main__constructor_container{
+    @include block(block, 280px, auto, none);
+    float: right;
+    background: #ebedec;
+    position: relative;
+    margin-top: 20px;
+    display: inline-block;
+    .portlet-body{
+      padding: 0!important;
+      display: inline-block;
+      overflow: hidden;
+      width: 210px;
+      .canvas-container{
+        box-shadow: 0 0 0 1px $color!important;
+      }
+    }
+  }
+}
