@@ -115,11 +115,14 @@
 // }
 #design-action-options,#design-action-legs{
   displa: block;
+  width: 100%;
   @include border-radius(0);
   color: #00b1a9;
   background-color: #ffffff;
-  margin: 10px 0;
-
+  margin: 6px 0;
+  i{
+    display: none;
+  }
 }
 #design-actions .portlet-title{
   width: 300px;
@@ -158,19 +161,42 @@
     border-bottom: 1px solid transparent!important;
   }
 }
+.table-hover>tbody>tr:hover, .table-hover>tbody>tr:hover>td {
+    background: transparent!important;
+}
 .portlet-title{
   background: transparent!important;
   width: 100%;
   display: inline-block;
   width: 70px;
 }
-.design-cart{
+#design-cart{
   position: relative;
-  // top: -100px;
+  margin-top: -40px;
   .portlet-body{
       top: 0px!important;
-      margin-top: 16px!important;
-      widows: 100%;
+      margin-top: -5px!important;
+      width: 100%;
+  }
+  .portlet-title{
+    width:100%;
+  }
+   th,td{
+       margin: 5px 0;
+       .btn{display:none;}
+       input.design-number-input {
+          width: 111px;
+          text-align: center;
+          border-radius: 11px;
+          border-color: #969696;
+       }
+   }
+  .caption{
+    i{
+      font-size: 27px!important;
+      margin-top: 0px!important;
+      margin-right: 8px!important;
+    }
   }
 }
 .caption{
@@ -254,7 +280,7 @@
   @include border-radius(0);
   padding: 9px 95px 8px;
   position: relative;
-  bottom: 2px;
+  bottom: 15px;
   i{
     display: none;
   }
