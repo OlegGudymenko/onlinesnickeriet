@@ -45,6 +45,20 @@
 // #design-btn-frasa{
 //   display: none!important;
 // }
+.design-remove-cell{
+  display:block!important;
+    #design-cart td .btn {
+      display: block;
+      position: absolute;
+      width: 40px;
+      top: 167px;
+      right: 14px;
+      i{
+        line-height: 14px;
+        font-size: 15px;
+      }
+    }
+}
 #design-btn-tour{
   display: none!important;
 }
@@ -97,7 +111,7 @@
     top: 2px;
     color: black;
     border-radius: 0;
-    padding: 6px 20px;
+    padding: 6px 36px 25px 6px
     span{
       font-size: 18px;
       font-weight: 600;
@@ -147,7 +161,25 @@
   }
 }
 #design-action-rensa{
-  display: none;
+  background-color: transparent;
+  border: none;
+  width: 30px;
+  height: 30px;
+  // background-color: red;
+  text-indent: 20px;
+  overflow: hidden;
+  position: absolute;
+  top: 11px;
+  right: 6px;
+  z-index: 333;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 25px;
+  background-image: url(../images/cancel-red.png);
+  i{
+    display:none!important;
+
+  }
 }
 // #design-btn-tour{
 //   display: none;
@@ -170,35 +202,10 @@
   display: inline-block;
   width: 70px;
 }
-#design-cart{
-  position: relative;
-  margin-top: -40px;
-  .portlet-body{
-      top: 0px!important;
-      margin-top: -5px!important;
-      width: 100%;
-  }
-  .portlet-title{
-    width:100%;
-  }
-   th,td{
-       margin: 5px 0;
-       .btn{display:none;}
-       input.design-number-input {
-          width: 111px;
-          text-align: center;
-          border-radius: 11px;
-          border-color: #969696;
-       }
-   }
-  .caption{
-    i{
-      font-size: 27px!important;
-      margin-top: 0px!important;
-      margin-right: 8px!important;
-    }
-  }
+#design-cart .portlet-body {
+    width: 100%!important;
 }
+
 .caption{
   display: block!important;
   font-size: 18px!important;
@@ -226,12 +233,12 @@
         font-family: 'Open Sans', sans-serif;
         padding: 0 5px!important;
         border: none!important;
-        &:first-of-type{
-          display: none;
-        }
-        &:last-of-type{
-          display: none;
-        }
+        // &:first-of-type{
+        //   display: none;
+        // }
+        // &:last-of-type{
+        //   display: none;
+        // }
         .input-sm{
           height: 22px;
         }
@@ -239,7 +246,7 @@
     }
   }
   tbody{
-    width: 189px;
+    width: 100%;
   }
 }
 #design-cart{
