@@ -41,9 +41,7 @@
         color: $header__top_text;
         border: none;
         width: 100%;
-        // height: auto;
-        // padding: 6px 0;
-        paddin:0;
+        padding:0;
         &:after, &:before{
           @include pseudo-elem(100%, 10px, $gray);
           position: absolute;
@@ -197,13 +195,11 @@
       padding: 0!important;
       display: inline-block;
       overflow: hidden;
-      width: 230px;
+      width: 228px;
       margin-top:49px;
       position: relative;
       top: 1px;
       .canvas-container{
-        border-top: 0!important;
-        border-left: 0!important;
         box-shadow: 0 0 0 1px $color!important;
       }
     }
@@ -212,6 +208,10 @@
 #design-cart{
   position: relative;
   margin-top: -40px;
+  .table-responsive{
+    border:none!important;
+    padding: 10px!important;
+  }
   .portlet-body{
       top: 0px!important;
       margin-top: -5px!important;
@@ -220,9 +220,38 @@
   .portlet-title{
     width:100%;
   }
+
+  .design-remove-cell{
+    display:block!important;
+    position: relative ;
+    .btn{
+      position: absolute;
+      top: -41px;
+      display: block;
+      right: 11px;
+      display: block!important;
+      height: 33px;
+      width: 50px;
+      background-color: transparent;
+      border: 0;
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      background-size: 25px;
+      background-image: url(../images/cancel-red.png);
+      &:hover{
+        background-color: transparent;
+        border-color:  transparent;
+      }
+      i{
+        display:none;
+      }
+    }
+  }
+
   td {
     float: right;
     width: 69%!important;
+    height: 25px;
     &.design-item-thumb{
       display:none!important;
     }
@@ -230,6 +259,7 @@
   th {
     float: left;
     width: 31%!important;
+    height: 25px;
   }
    th,td{
        margin: 5px 0;
@@ -248,4 +278,20 @@
       margin-right: 8px!important;
     }
   }
+
+}
+
+#design-btn-material,
+#design-btn-extra .icon-btn,
+#design-btn-legs .icon-btn{
+  border-right:0!important;
+  border-left: 0!important;
+}
+#design-modal-properties,
+#design-modal-hole,
+#design-modal-frasa{
+  border-left:0!important;
+}
+.portlet.box.default>.portlet-title, .portlet.default, .portlet>.portlet-body.default {
+    background-color: transparent;
 }
