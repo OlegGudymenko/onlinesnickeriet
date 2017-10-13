@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$header__top_text".
-        on line 75 of /home/oleg/Applications/online_snieckeriet/onlinesnickeriet/sass/partials/mobile/customConstructor.scss
+        on line 88 of /home/oleg/Applications/online_snieckeriet/onlinesnickeriet/sass/partials/mobile/customConstructor.scss
 
-70:   border: none;
-71:   padding: 0;
-72:   span{
-73:     font-size: 18px;
-74:     font-weight: 600;
-75:     color: $header__top_text;
-76:   }
-77:   i{
-78:     color: $header__top_text;
-79:   }
-80: }
+83:   border: none;
+84:   padding: 0;
+85:   span{
+86:     font-size: 18px;
+87:     font-weight: 600;
+88:     color: $header__top_text;
+89:   }
+90:   i{
+91:     color: $header__top_text;
+92:   }
+93: }
 
 Backtrace:
-/home/oleg/Applications/online_snieckeriet/onlinesnickeriet/sass/partials/mobile/customConstructor.scss:75
+/home/oleg/Applications/online_snieckeriet/onlinesnickeriet/sass/partials/mobile/customConstructor.scss:88
 /usr/lib/ruby/vendor_ruby/sass/script/tree/variable.rb:49:in `_perform'
 /usr/lib/ruby/vendor_ruby/sass/script/tree/node.rb:50:in `perform'
 /usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:395:in `visit_prop'
@@ -68,17 +68,18 @@ Backtrace:
 /usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
 /usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:209:in `each'
 /usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:293:in `watch'
-/usr/lib/ruby/vendor_ruby/compass/sass_compiler.rb:46:in `watch!'
-/usr/lib/ruby/vendor_ruby/compass/commands/watch_project.rb:41:in `perform'
-/usr/lib/ruby/vendor_ruby/compass/commands/base.rb:18:in `execute'
-/usr/lib/ruby/vendor_ruby/compass/commands/project_base.rb:19:in `execute'
-/usr/lib/ruby/vendor_ruby/compass/exec/sub_command_ui.rb:43:in `perform!'
-/usr/lib/ruby/vendor_ruby/compass/exec/sub_command_ui.rb:15:in `run!'
-/usr/bin/compass:30:in `block in <main>'
-/usr/bin/compass:44:in `<main>'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:471:in `on_file_changed'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:328:in `block in watch'
+/usr/lib/ruby/vendor_ruby/listen/event/config.rb:23:in `call'
+/usr/lib/ruby/vendor_ruby/listen/event/processor.rb:115:in `_process_changes'
+/usr/lib/ruby/vendor_ruby/listen/event/processor.rb:19:in `block in loop_for'
+/usr/lib/ruby/vendor_ruby/listen/event/processor.rb:15:in `loop'
+/usr/lib/ruby/vendor_ruby/listen/event/processor.rb:15:in `loop_for'
+/usr/lib/ruby/vendor_ruby/listen/event/loop.rb:84:in `_wait_for_changes'
+/usr/lib/ruby/vendor_ruby/listen/event/loop.rb:42:in `block in setup'
+/usr/lib/ruby/vendor_ruby/listen/internals/thread_pool.rb:6:in `block in add'
 */
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$header__top_text\".\A         on line 75 of /home/oleg/Applications/online_snieckeriet/onlinesnickeriet/sass/partials/mobile/customConstructor.scss\A \A 70:   border: none;\A 71:   padding: 0;\A 72:   span{\A 73:     font-size: 18px;\A 74:     font-weight: 600;\A 75:     color: $header__top_text;\A 76:   }\A 77:   i{\A 78:     color: $header__top_text;\A 79:   }\A 80: }"; }
+  content: "Error: Undefined variable: \"$header__top_text\".\A         on line 88 of /home/oleg/Applications/online_snieckeriet/onlinesnickeriet/sass/partials/mobile/customConstructor.scss\A \A 83:   border: none;\A 84:   padding: 0;\A 85:   span{\A 86:     font-size: 18px;\A 87:     font-weight: 600;\A 88:     color: $header__top_text;\A 89:   }\A 90:   i{\A 91:     color: $header__top_text;\A 92:   }\A 93: }"; }
