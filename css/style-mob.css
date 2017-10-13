@@ -2459,24 +2459,25 @@ h6 {
 }
 /* line 211, ../sass/partials/mobile/construction.scss */
 #design-cart .table-responsive {
+  border: none !important;
   padding: 10px !important;
 }
-/* line 214, ../sass/partials/mobile/construction.scss */
+/* line 215, ../sass/partials/mobile/construction.scss */
 #design-cart .portlet-body {
   top: 0px !important;
   margin-top: -5px !important;
   width: 100% !important;
 }
-/* line 219, ../sass/partials/mobile/construction.scss */
+/* line 220, ../sass/partials/mobile/construction.scss */
 #design-cart .portlet-title {
   width: 100%;
 }
-/* line 223, ../sass/partials/mobile/construction.scss */
+/* line 224, ../sass/partials/mobile/construction.scss */
 #design-cart .design-remove-cell {
   display: block !important;
   position: relative;
 }
-/* line 226, ../sass/partials/mobile/construction.scss */
+/* line 227, ../sass/partials/mobile/construction.scss */
 #design-cart .design-remove-cell .btn {
   position: absolute;
   top: -41px;
@@ -2492,54 +2493,54 @@ h6 {
   background-size: 25px;
   background-image: url(../images/cancel-red.png);
 }
-/* line 240, ../sass/partials/mobile/construction.scss */
+/* line 241, ../sass/partials/mobile/construction.scss */
 #design-cart .design-remove-cell .btn:hover {
   background-color: transparent;
   border-color: transparent;
 }
-/* line 244, ../sass/partials/mobile/construction.scss */
+/* line 245, ../sass/partials/mobile/construction.scss */
 #design-cart .design-remove-cell .btn i {
   display: none;
 }
-/* line 250, ../sass/partials/mobile/construction.scss */
+/* line 251, ../sass/partials/mobile/construction.scss */
 #design-cart td {
   float: right;
   width: 69% !important;
   height: 25px;
 }
-/* line 254, ../sass/partials/mobile/construction.scss */
+/* line 255, ../sass/partials/mobile/construction.scss */
 #design-cart td.design-item-thumb {
   display: none !important;
 }
-/* line 258, ../sass/partials/mobile/construction.scss */
+/* line 259, ../sass/partials/mobile/construction.scss */
 #design-cart th {
   float: left;
   width: 31% !important;
   height: 25px;
 }
-/* line 263, ../sass/partials/mobile/construction.scss */
+/* line 264, ../sass/partials/mobile/construction.scss */
 #design-cart th, #design-cart td {
   margin: 5px 0;
 }
-/* line 265, ../sass/partials/mobile/construction.scss */
+/* line 266, ../sass/partials/mobile/construction.scss */
 #design-cart th .btn, #design-cart td .btn {
   display: none;
 }
-/* line 266, ../sass/partials/mobile/construction.scss */
+/* line 267, ../sass/partials/mobile/construction.scss */
 #design-cart th input.design-number-input, #design-cart td input.design-number-input {
   width: 111px;
   text-align: center;
   border-radius: 11px;
   border-color: #969696;
 }
-/* line 274, ../sass/partials/mobile/construction.scss */
+/* line 275, ../sass/partials/mobile/construction.scss */
 #design-cart .caption i {
   font-size: 27px !important;
   margin-top: 0px !important;
   margin-right: 8px !important;
 }
 
-/* line 283, ../sass/partials/mobile/construction.scss */
+/* line 284, ../sass/partials/mobile/construction.scss */
 #design-btn-material,
 #design-btn-extra .icon-btn,
 #design-btn-legs .icon-btn {
@@ -2547,14 +2548,14 @@ h6 {
   border-left: 0 !important;
 }
 
-/* line 289, ../sass/partials/mobile/construction.scss */
+/* line 290, ../sass/partials/mobile/construction.scss */
 #design-modal-properties,
 #design-modal-hole,
 #design-modal-frasa {
   border-left: 0 !important;
 }
 
-/* line 294, ../sass/partials/mobile/construction.scss */
+/* line 295, ../sass/partials/mobile/construction.scss */
 .portlet.box.default > .portlet-title, .portlet.default, .portlet > .portlet-body.default {
   background-color: transparent;
 }
