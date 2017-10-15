@@ -11,7 +11,6 @@ $('.header__bot .hamburger').click(function(){
 
 //constructor inline-styles
 function customCss(){
-  $('#design-cart .design-number-input').css('width','111px');
   $('#step-0.popover').css('display','none');
   $('#design-action-rensa').text('');
 }
