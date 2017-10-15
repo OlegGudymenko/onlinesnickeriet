@@ -29,6 +29,7 @@
         margin: 20px 0;
         margin-right: 62px;
         padding: 0 0 20px 0;
+        position: relative; 
         @media (max-width: $wds){
           margin-right: 0;
           width: 452px;
@@ -97,12 +98,26 @@
           line-height: 43px;
           @include duration($time);
           font-family: 'Open Sans', sans-serif;
+
+          &.li__price{
+            display: none;
+          }
+          &.buy-now-btn{
+            position: absolute ;
+            top:10px;
+            right: 10px; 
+            background-color: #FFF ;
+            margin:0!important;
+            width: 141px;
+            height: 35px;
+            line-height: 35px;
+            @media (max-width: $wml){
+              display:none;
+            }
+          }
           &:hover{
             color: #fff;
             background: $color;
-          }
-          &.li__price{
-            display: none;
           }
           @media (max-width: $wml){
             position: absolute;

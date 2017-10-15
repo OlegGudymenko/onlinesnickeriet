@@ -1,20 +1,20 @@
 /*
 Error: Undefined mixin 'block'.
-        on line 3 of /home/oleg/Applications/online_snieckeriet/onlinesnickeriet/sass/partials/construction.scss, in `block'
-        from line 3 of /home/oleg/Applications/online_snieckeriet/onlinesnickeriet/sass/partials/construction.scss
+        on line 3 of /home/oleg/Applications/online_snieckeriet/onlinesnickeriet/sass/partials/tillKassan.scss, in `block'
+        from line 3 of /home/oleg/Applications/online_snieckeriet/onlinesnickeriet/sass/partials/tillKassan.scss
 
 1: #main{
-2:   .list__title{
-3:     @include block(inline-block, auto, auto, none);
-4:     @include text($black, 30px, 600, left);
-5:     float: left;
-6:     padding: 65px 0 20px 0;
-7:     margin: 0!important;
-8:     @media (max-width: $wt){
+2: 	.till-kassan-container{
+3: 		@include block(block, 100%, auto, #fff);
+4: 		.till-kassan-text{
+5: 			@include text(#555555, 18px, 700, center);
+6: 			margin:145px auto 60px;
+7: 			width: 200px; 
+8: 		}
 
 Backtrace:
-/home/oleg/Applications/online_snieckeriet/onlinesnickeriet/sass/partials/construction.scss:3:in `block'
-/home/oleg/Applications/online_snieckeriet/onlinesnickeriet/sass/partials/construction.scss:3
+/home/oleg/Applications/online_snieckeriet/onlinesnickeriet/sass/partials/tillKassan.scss:3:in `block'
+/home/oleg/Applications/online_snieckeriet/onlinesnickeriet/sass/partials/tillKassan.scss:3
 /usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:349:in `block in visit_mixin'
 /usr/lib/ruby/vendor_ruby/sass/stack.rb:98:in `block in with_mixin'
 /usr/lib/ruby/vendor_ruby/sass/stack.rb:115:in `with_frame'
@@ -83,4 +83,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'block'.\A         on line 3 of /home/oleg/Applications/online_snieckeriet/onlinesnickeriet/sass/partials/construction.scss, in `block'\A         from line 3 of /home/oleg/Applications/online_snieckeriet/onlinesnickeriet/sass/partials/construction.scss\A \A 1: #main{\A 2:   .list__title{\A 3:     @include block(inline-block, auto, auto, none);\A 4:     @include text($black, 30px, 600, left);\A 5:     float: left;\A 6:     padding: 65px 0 20px 0;\A 7:     margin: 0!important;\A 8:     @media (max-width: $wt){"; }
+  content: "Error: Undefined mixin 'block'.\A         on line 3 of /home/oleg/Applications/online_snieckeriet/onlinesnickeriet/sass/partials/tillKassan.scss, in `block'\A         from line 3 of /home/oleg/Applications/online_snieckeriet/onlinesnickeriet/sass/partials/tillKassan.scss\A \A 1: #main{\A 2: 	.till-kassan-container{\A 3: 		@include block(block, 100%, auto, #fff);\A 4: 		.till-kassan-text{\A 5: 			@include text(#555555, 18px, 700, center);\A 6: 			margin:145px auto 60px;\A 7: 			width: 200px; \A 8: 		}"; }

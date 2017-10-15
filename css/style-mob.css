@@ -1720,7 +1720,11 @@ h6 {
   padding: 0 6px;
   margin: 0;
 }
-/* line 80, ../sass/partials/mobile/mainPage_pre-made.scss */
+/* line 77, ../sass/partials/mobile/mainPage_pre-made.scss */
+#main .main__pre-made .pre-made__list li a.buy-now-btn {
+  display: none;
+}
+/* line 83, ../sass/partials/mobile/mainPage_pre-made.scss */
 #main .main__pre-made .pre-made__more {
   color: #08ADA7;
   font-size: 20px;
@@ -1742,7 +1746,7 @@ h6 {
   margin-top: 12px;
   display: none;
 }
-/* line 94, ../sass/partials/mobile/mainPage_pre-made.scss */
+/* line 97, ../sass/partials/mobile/mainPage_pre-made.scss */
 #main .main__pre-made .pre-made__more:after {
   content: "";
   display: block;
@@ -1754,7 +1758,7 @@ h6 {
   left: 0;
   z-index: -1;
 }
-/* line 102, ../sass/partials/mobile/mainPage_pre-made.scss */
+/* line 105, ../sass/partials/mobile/mainPage_pre-made.scss */
 #main .main__pre-made .mob-text {
   display: block;
   width: 100%;
@@ -1763,20 +1767,20 @@ h6 {
   padding: 12px 0 20px 0;
   margin-bottom: 20px;
 }
-/* line 109, ../sass/partials/mobile/mainPage_pre-made.scss */
+/* line 112, ../sass/partials/mobile/mainPage_pre-made.scss */
 #main .main__pre-made .mob-text p {
   color: #555555;
   font-size: 18px;
   font-weight: 600;
   padding: 0 40px;
 }
-/* line 114, ../sass/partials/mobile/mainPage_pre-made.scss */
+/* line 117, ../sass/partials/mobile/mainPage_pre-made.scss */
 #main .main__pre-made .mob-text p:nth-of-type(2) {
   font-weight: 400;
   font-family: 'Open Sans', sans-serif;
   padding: 5px 40px 15px 40px;
 }
-/* line 120, ../sass/partials/mobile/mainPage_pre-made.scss */
+/* line 123, ../sass/partials/mobile/mainPage_pre-made.scss */
 #main .main__pre-made .mob-text a {
   display: block;
   width: 278px;
@@ -2177,7 +2181,7 @@ h6 {
   float: left;
   clear: left;
   margin: 0 !important;
-  background: #f9f9f9;
+  background: transparent;
   padding: 0;
   border: 0;
   border-top: none;
@@ -3101,7 +3105,7 @@ h6 {
 /* line 29, ../sass/partials/mobile/logIn.sass */
 .main__log-in form input:not([type="submit"]) {
   display: block;
-  width: 288px;
+  width: 278px;
   height: 64px;
   background: none;
   margin: 0 0 35px 0;
@@ -3145,7 +3149,7 @@ h6 {
 /* line 53, ../sass/partials/mobile/logIn.sass */
 .main__log-in form input[type="submit"] {
   display: block;
-  width: 310px;
+  width: 100%;
   height: 64px;
   background: #08ADA7;
   color: #fff;
