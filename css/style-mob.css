@@ -428,11 +428,7 @@ h6 {
   width: 100%;
   line-height: 1;
   text-align: center;
-  padding: 16px 0;
-}
-/* line 98, ../sass/partials/mobile/header.scss */
-#header .header__bot #nav li:first-child {
-  padding: 5px 0 0 0;
+  padding: 13px 0;
 }
 /* line 101, ../sass/partials/mobile/header.scss */
 #header .header__bot #nav li .header__basket {
@@ -504,6 +500,45 @@ h6 {
   bottom: 0;
 }
 /* line 147, ../sass/partials/mobile/header.scss */
+#header .header__bot .login-link {
+  margin-top: 20px;
+  display: block;
+  color: #08ada7;
+  font-size: 22px;
+  font-weight: 600;
+  text-align: center;
+  font-family: 'Exo', sans-serif;
+  display: block;
+  position: fixed;
+  bottom: 154px;
+  left: 50%;
+  width: 300px;
+  left: 50%;
+  margin-left: -150px;
+  text-align: center;
+}
+/* line 161, ../sass/partials/mobile/header.scss */
+#header .header__bot .become-partner {
+  display: block;
+  display: block;
+  width: 300px;
+  height: 45px;
+  background: #08ada7;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  margin: auto;
+  line-height: 45px;
+  float: none;
+  background: #08ADA7;
+  z-index: 333;
+  position: fixed;
+  bottom: 75px;
+  left: 50%;
+  margin-left: -150px;
+}
+/* line 176, ../sass/partials/mobile/header.scss */
 #header .header__bot .hamburger {
   float: right;
   width: 29px;
@@ -515,12 +550,12 @@ h6 {
   background-size: 29px;
   background-image: url(../images/menu.png);
 }
-/* line 157, ../sass/partials/mobile/header.scss */
+/* line 186, ../sass/partials/mobile/header.scss */
 #header .header__bot .hamburger.active {
   background-size: 26px;
   background-image: url(../images/cancel.png);
 }
-/* line 162, ../sass/partials/mobile/header.scss */
+/* line 191, ../sass/partials/mobile/header.scss */
 #header .header__bot .header__become-partner {
   display: block;
   width: 183px;
@@ -543,13 +578,13 @@ h6 {
   margin-right: 10px;
   display: none;
 }
-/* line 173, ../sass/partials/mobile/header.scss */
+/* line 202, ../sass/partials/mobile/header.scss */
 #header .header__bot .header__become-partner:hover {
   background: #08ADA7 !important;
   color: #fff;
   transition: background-color .5s, color .5s;
 }
-/* line 179, ../sass/partials/mobile/header.scss */
+/* line 208, ../sass/partials/mobile/header.scss */
 #header .header__bot .header__entered {
   float: right;
   padding: 0 40px 0 0;
@@ -557,7 +592,7 @@ h6 {
   margin-top: 22px;
   display: none;
 }
-/* line 185, ../sass/partials/mobile/header.scss */
+/* line 214, ../sass/partials/mobile/header.scss */
 #header .header__bot .header__entered .entered__button {
   color: #000;
   font-size: 16px;
@@ -568,7 +603,7 @@ h6 {
   font-family: 'Open Sans', sans-serif;
   font-size: 0;
 }
-/* line 191, ../sass/partials/mobile/header.scss */
+/* line 220, ../sass/partials/mobile/header.scss */
 #header .header__bot .header__entered .entered__button:after, #header .header__bot .header__entered .entered__button:before {
   content: "";
   display: block;
@@ -584,7 +619,7 @@ h6 {
   -o-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-/* line 198, ../sass/partials/mobile/header.scss */
+/* line 227, ../sass/partials/mobile/header.scss */
 #header .header__bot .header__entered .entered__button:after {
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
@@ -593,7 +628,7 @@ h6 {
   transform: rotate(-45deg);
   right: -25px;
 }
-/* line 203, ../sass/partials/mobile/header.scss */
+/* line 232, ../sass/partials/mobile/header.scss */
 #header .header__bot .header__entered .entered__menu {
   display: block;
   position: absolute;
@@ -614,7 +649,7 @@ h6 {
   min-width: 124px;
   display: none;
 }
-/* line 214, ../sass/partials/mobile/header.scss */
+/* line 243, ../sass/partials/mobile/header.scss */
 #header .header__bot .header__entered .entered__menu a {
   display: block;
   color: #000;
@@ -624,33 +659,33 @@ h6 {
   font-family: "Open Sans", sans-serif;
   padding: 10px 20px;
 }
-/* line 219, ../sass/partials/mobile/header.scss */
+/* line 248, ../sass/partials/mobile/header.scss */
 #header .header__bot .header__entered .entered__menu a:hover {
   background: #e4e4e4;
 }
-/* line 225, ../sass/partials/mobile/header.scss */
+/* line 254, ../sass/partials/mobile/header.scss */
 #header .header__bot .header__entered.active .entered__menu {
   z-index: 4;
   display: block;
 }
-/* line 232, ../sass/partials/mobile/header.scss */
+/* line 261, ../sass/partials/mobile/header.scss */
 #header .header__bot .header_cart {
   float: right;
   width: 30px;
   height: 100%;
   display: none;
 }
-/* line 237, ../sass/partials/mobile/header.scss */
+/* line 266, ../sass/partials/mobile/header.scss */
 #header .header__bot .header_cart .cart-notification {
   position: absolute;
   width: auto;
   display: none;
 }
-/* line 242, ../sass/partials/mobile/header.scss */
+/* line 271, ../sass/partials/mobile/header.scss */
 #header .header__bot .header_cart .cart_widget_holder {
   display: block;
 }
-/* line 245, ../sass/partials/mobile/header.scss */
+/* line 274, ../sass/partials/mobile/header.scss */
 #header .header__bot .header_cart .icon {
   display: block;
   display: block;
@@ -660,13 +695,13 @@ h6 {
   margin: 27px 0 0 0;
   position: relative;
 }
-/* line 254, ../sass/partials/mobile/header.scss */
+/* line 283, ../sass/partials/mobile/header.scss */
 #header .header__bot .header_cart .icon:before {
   position: absolute;
   left: 5px;
   top: 15px;
 }
-/* line 259, ../sass/partials/mobile/header.scss */
+/* line 288, ../sass/partials/mobile/header.scss */
 #header .header__bot .header_cart .icon:after {
   content: "";
   display: block;
@@ -683,7 +718,7 @@ h6 {
   bottom: 4px;
   opacity: 0;
 }
-/* line 267, ../sass/partials/mobile/header.scss */
+/* line 296, ../sass/partials/mobile/header.scss */
 #header .header__bot .header_cart .icon .cart-wrap {
   border-radius: 100%;
   background-color: #08ada7;
@@ -701,7 +736,7 @@ h6 {
   transform: translateY(-50%);
   margin-top: -6px;
 }
-/* line 283, ../sass/partials/mobile/header.scss */
+/* line 312, ../sass/partials/mobile/header.scss */
 #header .header__bot .header_cart .icon .cart-wrap:before {
   border-color: transparent #08ada7 transparent;
   border-style: solid solid solid none;
@@ -714,11 +749,11 @@ h6 {
   width: 0;
   z-index: -1;
 }
-/* line 297, ../sass/partials/mobile/header.scss */
+/* line 326, ../sass/partials/mobile/header.scss */
 #header .header__bot .header_cart .icon:hover:after {
   opacity: 1;
 }
-/* line 302, ../sass/partials/mobile/header.scss */
+/* line 331, ../sass/partials/mobile/header.scss */
 #header .header__bot .header_cart .widget_shopping_cart, #header .header__bot .header_cart .wooocommerce {
   clear: both;
   display: none;
@@ -734,7 +769,7 @@ h6 {
   -ms-transition: top 0.1s ease-out;
   transition: top 0.1s ease-out;
 }
-/* line 316, ../sass/partials/mobile/header.scss */
+/* line 345, ../sass/partials/mobile/header.scss */
 #header .header__bot .header_cart .widget_shopping_cart .widget_shopping_cart_content, #header .header__bot .header_cart .wooocommerce .widget_shopping_cart_content {
   position: absolute;
   top: 0;
@@ -746,7 +781,7 @@ h6 {
   -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
   -o-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
 }
-/* line 326, ../sass/partials/mobile/header.scss */
+/* line 355, ../sass/partials/mobile/header.scss */
 #header .header__bot .header_cart .widget_shopping_cart .widget_shopping_cart_content:before, #header .header__bot .header_cart .wooocommerce .widget_shopping_cart_content:before {
   content: "";
   display: block;
@@ -757,21 +792,21 @@ h6 {
   border-left: 6px solid transparent;
   border-right: 6px solid transparent;
 }
-/* line 336, ../sass/partials/mobile/header.scss */
+/* line 365, ../sass/partials/mobile/header.scss */
 #header .header__bot .header_cart .widget_shopping_cart .widget_shopping_cart_content p, #header .header__bot .header_cart .wooocommerce .widget_shopping_cart_content p {
   margin-left: 10px;
 }
-/* line 338, ../sass/partials/mobile/header.scss */
+/* line 367, ../sass/partials/mobile/header.scss */
 #header .header__bot .header_cart .widget_shopping_cart .widget_shopping_cart_content p.total, #header .header__bot .header_cart .wooocommerce .widget_shopping_cart_content p.total {
   color: #f0f0f0;
   padding: 10px 0;
   border: none !important;
 }
-/* line 344, ../sass/partials/mobile/header.scss */
+/* line 373, ../sass/partials/mobile/header.scss */
 #header .header__bot .header_cart .widget_shopping_cart .widget_shopping_cart_content ul, #header .header__bot .header_cart .wooocommerce .widget_shopping_cart_content ul {
   padding-bottom: 10px;
 }
-/* line 346, ../sass/partials/mobile/header.scss */
+/* line 375, ../sass/partials/mobile/header.scss */
 #header .header__bot .header_cart .widget_shopping_cart .widget_shopping_cart_content ul li, #header .header__bot .header_cart .wooocommerce .widget_shopping_cart_content ul li {
   color: #f0f0f0;
   font-size: 14px;
@@ -782,7 +817,7 @@ h6 {
   min-height: 38px;
   min-width: 186px;
 }
-/* line 355, ../sass/partials/mobile/header.scss */
+/* line 384, ../sass/partials/mobile/header.scss */
 #header .header__bot .header_cart .widget_shopping_cart .widget_shopping_cart_content ul li:after, #header .header__bot .header_cart .wooocommerce .widget_shopping_cart_content ul li:after {
   content: "";
   display: block;
@@ -793,7 +828,7 @@ h6 {
   left: 0;
   bottom: 0;
 }
-/* line 361, ../sass/partials/mobile/header.scss */
+/* line 390, ../sass/partials/mobile/header.scss */
 #header .header__bot .header_cart .widget_shopping_cart .widget_shopping_cart_content ul li .custom-thumb, #header .header__bot .header_cart .wooocommerce .widget_shopping_cart_content ul li .custom-thumb {
   background: #fff;
   border: 1px solid rgba(0, 0, 0, 0.06);
@@ -817,7 +852,7 @@ h6 {
   left: 10px;
   top: 10px;
 }
-/* line 384, ../sass/partials/mobile/header.scss */
+/* line 413, ../sass/partials/mobile/header.scss */
 #header .header__bot .header_cart .widget_shopping_cart .widget_shopping_cart_content ul li .remove, #header .header__bot .header_cart .wooocommerce .widget_shopping_cart_content ul li .remove {
   float: right;
   color: #fff !important;
@@ -836,22 +871,22 @@ h6 {
   right: 6px;
   left: auto !important;
 }
-/* line 397, ../sass/partials/mobile/header.scss */
+/* line 426, ../sass/partials/mobile/header.scss */
 #header .header__bot .header_cart .widget_shopping_cart .widget_shopping_cart_content ul li .remove:hover, #header .header__bot .header_cart .wooocommerce .widget_shopping_cart_content ul li .remove:hover {
   color: #e4e4e4 !important;
 }
-/* line 401, ../sass/partials/mobile/header.scss */
+/* line 430, ../sass/partials/mobile/header.scss */
 #header .header__bot .header_cart .widget_shopping_cart .widget_shopping_cart_content ul li .quantity, #header .header__bot .header_cart .wooocommerce .widget_shopping_cart_content ul li .quantity {
   display: block;
   position: relative;
   left: -64px;
   top: 10px;
 }
-/* line 407, ../sass/partials/mobile/header.scss */
+/* line 436, ../sass/partials/mobile/header.scss */
 #header .header__bot .header_cart .widget_shopping_cart .widget_shopping_cart_content ul li:hover, #header .header__bot .header_cart .wooocommerce .widget_shopping_cart_content ul li:hover {
   background: rgba(255, 255, 255, 0.1);
 }
-/* line 414, ../sass/partials/mobile/header.scss */
+/* line 443, ../sass/partials/mobile/header.scss */
 #header .header__bot .header_cart .widget_shopping_cart .buttons a, #header .header__bot .header_cart .wooocommerce .buttons a {
   margin: 5px 0;
   line-height: 1;
@@ -878,12 +913,12 @@ h6 {
   -o-transition-duration: 300ms;
   transition-duration: 300ms;
 }
-/* line 435, ../sass/partials/mobile/header.scss */
+/* line 464, ../sass/partials/mobile/header.scss */
 #header .header__bot .header_cart .widget_shopping_cart .buttons a:hover, #header .header__bot .header_cart .wooocommerce .buttons a:hover {
   background: #777777;
 }
 
-/* line 445, ../sass/partials/mobile/header.scss */
+/* line 474, ../sass/partials/mobile/header.scss */
 #header .header__bot #nav li:hover {
   background-color: transparent !important;
 }
@@ -2440,8 +2475,9 @@ h6 {
   position: relative;
   margin-top: 10px;
   display: inline-block;
+  border: none;
 }
-/* line 194, ../sass/partials/mobile/construction.scss */
+/* line 195, ../sass/partials/mobile/construction.scss */
 #main .main__constructor_container .portlet-body {
   padding: 0 !important;
   display: inline-block;
@@ -2451,37 +2487,37 @@ h6 {
   position: relative;
   top: 1px;
 }
-/* line 202, ../sass/partials/mobile/construction.scss */
+/* line 203, ../sass/partials/mobile/construction.scss */
 #main .main__constructor_container .portlet-body .canvas-container {
   box-shadow: 0 0 0 1px #08ADA7 !important;
 }
 
-/* line 208, ../sass/partials/mobile/construction.scss */
+/* line 209, ../sass/partials/mobile/construction.scss */
 #design-cart {
   position: relative;
   margin-top: -40px;
 }
-/* line 211, ../sass/partials/mobile/construction.scss */
+/* line 212, ../sass/partials/mobile/construction.scss */
 #design-cart .table-responsive {
   border: none !important;
   padding: 10px !important;
 }
-/* line 215, ../sass/partials/mobile/construction.scss */
+/* line 216, ../sass/partials/mobile/construction.scss */
 #design-cart .portlet-body {
   top: 0px !important;
   margin-top: -5px !important;
   width: 100% !important;
 }
-/* line 220, ../sass/partials/mobile/construction.scss */
+/* line 221, ../sass/partials/mobile/construction.scss */
 #design-cart .portlet-title {
   width: 100%;
 }
-/* line 224, ../sass/partials/mobile/construction.scss */
+/* line 225, ../sass/partials/mobile/construction.scss */
 #design-cart .design-remove-cell {
   display: block !important;
   position: relative;
 }
-/* line 227, ../sass/partials/mobile/construction.scss */
+/* line 228, ../sass/partials/mobile/construction.scss */
 #design-cart .design-remove-cell .btn {
   position: absolute;
   top: -41px;
@@ -2497,54 +2533,54 @@ h6 {
   background-size: 25px;
   background-image: url(../images/cancel-red.png);
 }
-/* line 241, ../sass/partials/mobile/construction.scss */
+/* line 242, ../sass/partials/mobile/construction.scss */
 #design-cart .design-remove-cell .btn:hover {
   background-color: transparent;
   border-color: transparent;
 }
-/* line 245, ../sass/partials/mobile/construction.scss */
+/* line 246, ../sass/partials/mobile/construction.scss */
 #design-cart .design-remove-cell .btn i {
   display: none;
 }
-/* line 251, ../sass/partials/mobile/construction.scss */
+/* line 252, ../sass/partials/mobile/construction.scss */
 #design-cart td {
   float: right;
   width: 69% !important;
   height: 25px;
 }
-/* line 255, ../sass/partials/mobile/construction.scss */
+/* line 256, ../sass/partials/mobile/construction.scss */
 #design-cart td.design-item-thumb {
   display: none !important;
 }
-/* line 259, ../sass/partials/mobile/construction.scss */
+/* line 260, ../sass/partials/mobile/construction.scss */
 #design-cart th {
   float: left;
   width: 31% !important;
   height: 25px;
 }
-/* line 264, ../sass/partials/mobile/construction.scss */
+/* line 265, ../sass/partials/mobile/construction.scss */
 #design-cart th, #design-cart td {
   margin: 5px 0;
 }
-/* line 266, ../sass/partials/mobile/construction.scss */
+/* line 267, ../sass/partials/mobile/construction.scss */
 #design-cart th .btn, #design-cart td .btn {
   display: none;
 }
-/* line 267, ../sass/partials/mobile/construction.scss */
+/* line 268, ../sass/partials/mobile/construction.scss */
 #design-cart th input.design-number-input, #design-cart td input.design-number-input {
   width: 111px;
   text-align: center;
   border-radius: 11px;
   border-color: #969696;
 }
-/* line 275, ../sass/partials/mobile/construction.scss */
+/* line 276, ../sass/partials/mobile/construction.scss */
 #design-cart .caption i {
   font-size: 27px !important;
   margin-top: 0px !important;
   margin-right: 8px !important;
 }
 
-/* line 284, ../sass/partials/mobile/construction.scss */
+/* line 285, ../sass/partials/mobile/construction.scss */
 #design-btn-material,
 #design-btn-extra .icon-btn,
 #design-btn-legs .icon-btn {
@@ -2552,14 +2588,14 @@ h6 {
   border-left: 0 !important;
 }
 
-/* line 290, ../sass/partials/mobile/construction.scss */
+/* line 291, ../sass/partials/mobile/construction.scss */
 #design-modal-properties,
 #design-modal-hole,
 #design-modal-frasa {
   border-left: 0 !important;
 }
 
-/* line 295, ../sass/partials/mobile/construction.scss */
+/* line 296, ../sass/partials/mobile/construction.scss */
 .portlet.box.default > .portlet-title, .portlet.default, .portlet > .portlet-body.default {
   background-color: transparent;
 }
@@ -4627,7 +4663,7 @@ h6 {
 
 /* line 130, ../sass/partials/mobile/customConstructor.scss */
 #design-action-options, #design-action-legs {
-  displa: block;
+  display: block;
   width: 100%;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
