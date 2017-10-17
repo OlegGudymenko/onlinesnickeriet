@@ -502,7 +502,7 @@ h6 {
 /* line 147, ../sass/partials/mobile/header.scss */
 #header .header__bot .login-link {
   margin-top: 20px;
-  display: block;
+  display: none;
   color: #08ada7;
   font-size: 22px;
   font-weight: 600;
@@ -517,8 +517,12 @@ h6 {
   margin-left: -150px;
   text-align: center;
 }
-/* line 161, ../sass/partials/mobile/header.scss */
-#header .header__bot .become-partner {
+/* line 160, ../sass/partials/mobile/header.scss */
+#header .header__bot .login-link.visible {
+  display: block !important;
+}
+/* line 164, ../sass/partials/mobile/header.scss */
+#header .header__bot .header__become-partner {
   display: block;
   display: block;
   width: 300px;
@@ -538,7 +542,7 @@ h6 {
   left: 50%;
   margin-left: -150px;
 }
-/* line 176, ../sass/partials/mobile/header.scss */
+/* line 179, ../sass/partials/mobile/header.scss */
 #header .header__bot .hamburger {
   float: right;
   width: 29px;
@@ -550,12 +554,12 @@ h6 {
   background-size: 29px;
   background-image: url(../images/menu.png);
 }
-/* line 186, ../sass/partials/mobile/header.scss */
+/* line 189, ../sass/partials/mobile/header.scss */
 #header .header__bot .hamburger.active {
   background-size: 26px;
   background-image: url(../images/cancel.png);
 }
-/* line 191, ../sass/partials/mobile/header.scss */
+/* line 194, ../sass/partials/mobile/header.scss */
 #header .header__bot .header__become-partner {
   display: block;
   width: 183px;
@@ -578,13 +582,13 @@ h6 {
   margin-right: 10px;
   display: none;
 }
-/* line 202, ../sass/partials/mobile/header.scss */
+/* line 205, ../sass/partials/mobile/header.scss */
 #header .header__bot .header__become-partner:hover {
   background: #08ADA7 !important;
   color: #fff;
   transition: background-color .5s, color .5s;
 }
-/* line 208, ../sass/partials/mobile/header.scss */
+/* line 211, ../sass/partials/mobile/header.scss */
 #header .header__bot .header__entered {
   float: right;
   padding: 0 40px 0 0;
@@ -592,7 +596,7 @@ h6 {
   margin-top: 22px;
   display: none;
 }
-/* line 214, ../sass/partials/mobile/header.scss */
+/* line 217, ../sass/partials/mobile/header.scss */
 #header .header__bot .header__entered .entered__button {
   color: #000;
   font-size: 16px;
@@ -603,7 +607,7 @@ h6 {
   font-family: 'Open Sans', sans-serif;
   font-size: 0;
 }
-/* line 220, ../sass/partials/mobile/header.scss */
+/* line 223, ../sass/partials/mobile/header.scss */
 #header .header__bot .header__entered .entered__button:after, #header .header__bot .header__entered .entered__button:before {
   content: "";
   display: block;
@@ -619,7 +623,7 @@ h6 {
   -o-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-/* line 227, ../sass/partials/mobile/header.scss */
+/* line 230, ../sass/partials/mobile/header.scss */
 #header .header__bot .header__entered .entered__button:after {
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
@@ -628,7 +632,7 @@ h6 {
   transform: rotate(-45deg);
   right: -25px;
 }
-/* line 232, ../sass/partials/mobile/header.scss */
+/* line 235, ../sass/partials/mobile/header.scss */
 #header .header__bot .header__entered .entered__menu {
   display: block;
   position: absolute;
@@ -649,7 +653,7 @@ h6 {
   min-width: 124px;
   display: none;
 }
-/* line 243, ../sass/partials/mobile/header.scss */
+/* line 246, ../sass/partials/mobile/header.scss */
 #header .header__bot .header__entered .entered__menu a {
   display: block;
   color: #000;
@@ -659,33 +663,33 @@ h6 {
   font-family: "Open Sans", sans-serif;
   padding: 10px 20px;
 }
-/* line 248, ../sass/partials/mobile/header.scss */
+/* line 251, ../sass/partials/mobile/header.scss */
 #header .header__bot .header__entered .entered__menu a:hover {
   background: #e4e4e4;
 }
-/* line 254, ../sass/partials/mobile/header.scss */
+/* line 257, ../sass/partials/mobile/header.scss */
 #header .header__bot .header__entered.active .entered__menu {
   z-index: 4;
   display: block;
 }
-/* line 261, ../sass/partials/mobile/header.scss */
+/* line 264, ../sass/partials/mobile/header.scss */
 #header .header__bot .header_cart {
   float: right;
   width: 30px;
   height: 100%;
   display: none;
 }
-/* line 266, ../sass/partials/mobile/header.scss */
+/* line 269, ../sass/partials/mobile/header.scss */
 #header .header__bot .header_cart .cart-notification {
   position: absolute;
   width: auto;
   display: none;
 }
-/* line 271, ../sass/partials/mobile/header.scss */
+/* line 274, ../sass/partials/mobile/header.scss */
 #header .header__bot .header_cart .cart_widget_holder {
   display: block;
 }
-/* line 274, ../sass/partials/mobile/header.scss */
+/* line 277, ../sass/partials/mobile/header.scss */
 #header .header__bot .header_cart .icon {
   display: block;
   display: block;
@@ -695,13 +699,13 @@ h6 {
   margin: 27px 0 0 0;
   position: relative;
 }
-/* line 283, ../sass/partials/mobile/header.scss */
+/* line 286, ../sass/partials/mobile/header.scss */
 #header .header__bot .header_cart .icon:before {
   position: absolute;
   left: 5px;
   top: 15px;
 }
-/* line 288, ../sass/partials/mobile/header.scss */
+/* line 291, ../sass/partials/mobile/header.scss */
 #header .header__bot .header_cart .icon:after {
   content: "";
   display: block;
@@ -718,7 +722,7 @@ h6 {
   bottom: 4px;
   opacity: 0;
 }
-/* line 296, ../sass/partials/mobile/header.scss */
+/* line 299, ../sass/partials/mobile/header.scss */
 #header .header__bot .header_cart .icon .cart-wrap {
   border-radius: 100%;
   background-color: #08ada7;
@@ -736,7 +740,7 @@ h6 {
   transform: translateY(-50%);
   margin-top: -6px;
 }
-/* line 312, ../sass/partials/mobile/header.scss */
+/* line 315, ../sass/partials/mobile/header.scss */
 #header .header__bot .header_cart .icon .cart-wrap:before {
   border-color: transparent #08ada7 transparent;
   border-style: solid solid solid none;
@@ -749,11 +753,11 @@ h6 {
   width: 0;
   z-index: -1;
 }
-/* line 326, ../sass/partials/mobile/header.scss */
+/* line 329, ../sass/partials/mobile/header.scss */
 #header .header__bot .header_cart .icon:hover:after {
   opacity: 1;
 }
-/* line 331, ../sass/partials/mobile/header.scss */
+/* line 334, ../sass/partials/mobile/header.scss */
 #header .header__bot .header_cart .widget_shopping_cart, #header .header__bot .header_cart .wooocommerce {
   clear: both;
   display: none;
@@ -769,7 +773,7 @@ h6 {
   -ms-transition: top 0.1s ease-out;
   transition: top 0.1s ease-out;
 }
-/* line 345, ../sass/partials/mobile/header.scss */
+/* line 348, ../sass/partials/mobile/header.scss */
 #header .header__bot .header_cart .widget_shopping_cart .widget_shopping_cart_content, #header .header__bot .header_cart .wooocommerce .widget_shopping_cart_content {
   position: absolute;
   top: 0;
@@ -781,7 +785,7 @@ h6 {
   -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
   -o-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
 }
-/* line 355, ../sass/partials/mobile/header.scss */
+/* line 358, ../sass/partials/mobile/header.scss */
 #header .header__bot .header_cart .widget_shopping_cart .widget_shopping_cart_content:before, #header .header__bot .header_cart .wooocommerce .widget_shopping_cart_content:before {
   content: "";
   display: block;
@@ -792,21 +796,21 @@ h6 {
   border-left: 6px solid transparent;
   border-right: 6px solid transparent;
 }
-/* line 365, ../sass/partials/mobile/header.scss */
+/* line 368, ../sass/partials/mobile/header.scss */
 #header .header__bot .header_cart .widget_shopping_cart .widget_shopping_cart_content p, #header .header__bot .header_cart .wooocommerce .widget_shopping_cart_content p {
   margin-left: 10px;
 }
-/* line 367, ../sass/partials/mobile/header.scss */
+/* line 370, ../sass/partials/mobile/header.scss */
 #header .header__bot .header_cart .widget_shopping_cart .widget_shopping_cart_content p.total, #header .header__bot .header_cart .wooocommerce .widget_shopping_cart_content p.total {
   color: #f0f0f0;
   padding: 10px 0;
   border: none !important;
 }
-/* line 373, ../sass/partials/mobile/header.scss */
+/* line 376, ../sass/partials/mobile/header.scss */
 #header .header__bot .header_cart .widget_shopping_cart .widget_shopping_cart_content ul, #header .header__bot .header_cart .wooocommerce .widget_shopping_cart_content ul {
   padding-bottom: 10px;
 }
-/* line 375, ../sass/partials/mobile/header.scss */
+/* line 378, ../sass/partials/mobile/header.scss */
 #header .header__bot .header_cart .widget_shopping_cart .widget_shopping_cart_content ul li, #header .header__bot .header_cart .wooocommerce .widget_shopping_cart_content ul li {
   color: #f0f0f0;
   font-size: 14px;
@@ -817,7 +821,7 @@ h6 {
   min-height: 38px;
   min-width: 186px;
 }
-/* line 384, ../sass/partials/mobile/header.scss */
+/* line 387, ../sass/partials/mobile/header.scss */
 #header .header__bot .header_cart .widget_shopping_cart .widget_shopping_cart_content ul li:after, #header .header__bot .header_cart .wooocommerce .widget_shopping_cart_content ul li:after {
   content: "";
   display: block;
@@ -828,7 +832,7 @@ h6 {
   left: 0;
   bottom: 0;
 }
-/* line 390, ../sass/partials/mobile/header.scss */
+/* line 393, ../sass/partials/mobile/header.scss */
 #header .header__bot .header_cart .widget_shopping_cart .widget_shopping_cart_content ul li .custom-thumb, #header .header__bot .header_cart .wooocommerce .widget_shopping_cart_content ul li .custom-thumb {
   background: #fff;
   border: 1px solid rgba(0, 0, 0, 0.06);
@@ -852,7 +856,7 @@ h6 {
   left: 10px;
   top: 10px;
 }
-/* line 413, ../sass/partials/mobile/header.scss */
+/* line 416, ../sass/partials/mobile/header.scss */
 #header .header__bot .header_cart .widget_shopping_cart .widget_shopping_cart_content ul li .remove, #header .header__bot .header_cart .wooocommerce .widget_shopping_cart_content ul li .remove {
   float: right;
   color: #fff !important;
@@ -871,22 +875,22 @@ h6 {
   right: 6px;
   left: auto !important;
 }
-/* line 426, ../sass/partials/mobile/header.scss */
+/* line 429, ../sass/partials/mobile/header.scss */
 #header .header__bot .header_cart .widget_shopping_cart .widget_shopping_cart_content ul li .remove:hover, #header .header__bot .header_cart .wooocommerce .widget_shopping_cart_content ul li .remove:hover {
   color: #e4e4e4 !important;
 }
-/* line 430, ../sass/partials/mobile/header.scss */
+/* line 433, ../sass/partials/mobile/header.scss */
 #header .header__bot .header_cart .widget_shopping_cart .widget_shopping_cart_content ul li .quantity, #header .header__bot .header_cart .wooocommerce .widget_shopping_cart_content ul li .quantity {
   display: block;
   position: relative;
   left: -64px;
   top: 10px;
 }
-/* line 436, ../sass/partials/mobile/header.scss */
+/* line 439, ../sass/partials/mobile/header.scss */
 #header .header__bot .header_cart .widget_shopping_cart .widget_shopping_cart_content ul li:hover, #header .header__bot .header_cart .wooocommerce .widget_shopping_cart_content ul li:hover {
   background: rgba(255, 255, 255, 0.1);
 }
-/* line 443, ../sass/partials/mobile/header.scss */
+/* line 446, ../sass/partials/mobile/header.scss */
 #header .header__bot .header_cart .widget_shopping_cart .buttons a, #header .header__bot .header_cart .wooocommerce .buttons a {
   margin: 5px 0;
   line-height: 1;
@@ -913,12 +917,12 @@ h6 {
   -o-transition-duration: 300ms;
   transition-duration: 300ms;
 }
-/* line 464, ../sass/partials/mobile/header.scss */
+/* line 467, ../sass/partials/mobile/header.scss */
 #header .header__bot .header_cart .widget_shopping_cart .buttons a:hover, #header .header__bot .header_cart .wooocommerce .buttons a:hover {
   background: #777777;
 }
 
-/* line 474, ../sass/partials/mobile/header.scss */
+/* line 477, ../sass/partials/mobile/header.scss */
 #header .header__bot #nav li:hover {
   background-color: transparent !important;
 }
@@ -1757,9 +1761,18 @@ h6 {
 }
 /* line 77, ../sass/partials/mobile/mainPage_pre-made.scss */
 #main .main__pre-made .pre-made__list li a.buy-now-btn {
-  display: none;
+  left: auto;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #FFF;
+  margin: 0 !important;
+  width: 141px;
+  height: 35px;
+  color: #08ADA7;
+  line-height: 35px;
 }
-/* line 83, ../sass/partials/mobile/mainPage_pre-made.scss */
+/* line 92, ../sass/partials/mobile/mainPage_pre-made.scss */
 #main .main__pre-made .pre-made__more {
   color: #08ADA7;
   font-size: 20px;
@@ -1781,7 +1794,7 @@ h6 {
   margin-top: 12px;
   display: none;
 }
-/* line 97, ../sass/partials/mobile/mainPage_pre-made.scss */
+/* line 106, ../sass/partials/mobile/mainPage_pre-made.scss */
 #main .main__pre-made .pre-made__more:after {
   content: "";
   display: block;
@@ -1793,7 +1806,7 @@ h6 {
   left: 0;
   z-index: -1;
 }
-/* line 105, ../sass/partials/mobile/mainPage_pre-made.scss */
+/* line 114, ../sass/partials/mobile/mainPage_pre-made.scss */
 #main .main__pre-made .mob-text {
   display: block;
   width: 100%;
@@ -1802,20 +1815,20 @@ h6 {
   padding: 12px 0 20px 0;
   margin-bottom: 20px;
 }
-/* line 112, ../sass/partials/mobile/mainPage_pre-made.scss */
+/* line 121, ../sass/partials/mobile/mainPage_pre-made.scss */
 #main .main__pre-made .mob-text p {
   color: #555555;
   font-size: 18px;
   font-weight: 600;
   padding: 0 40px;
 }
-/* line 117, ../sass/partials/mobile/mainPage_pre-made.scss */
+/* line 126, ../sass/partials/mobile/mainPage_pre-made.scss */
 #main .main__pre-made .mob-text p:nth-of-type(2) {
   font-weight: 400;
   font-family: 'Open Sans', sans-serif;
   padding: 5px 40px 15px 40px;
 }
-/* line 123, ../sass/partials/mobile/mainPage_pre-made.scss */
+/* line 132, ../sass/partials/mobile/mainPage_pre-made.scss */
 #main .main__pre-made .mob-text a {
   display: block;
   width: 278px;
