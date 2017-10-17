@@ -16,5 +16,6 @@ $('.header__bot .hamburger').click(function(){
 function customCss(){
   $('#step-0.popover').css('display','none');
   $('#design-action-rensa').text('');
+  $('.design-canvas-px').after('<div class="canvas-overlay"></div>')
 }
 customCss()
