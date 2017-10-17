@@ -509,18 +509,17 @@ h6 {
   text-align: center;
   font-family: 'Exo', sans-serif;
   position: fixed;
-  bottom: 144px;
-  left: 50%;
+  bottom: 100px;
   width: 300px;
   left: 50%;
   margin-left: -150px;
   text-align: center;
 }
-/* line 159, ../sass/partials/mobile/header.scss */
+/* line 158, ../sass/partials/mobile/header.scss */
 #header .header__bot .login-link.visible {
   display: block !important;
 }
-/* line 163, ../sass/partials/mobile/header.scss */
+/* line 162, ../sass/partials/mobile/header.scss */
 #header .header__bot .header__become-partner {
   display: block;
   display: block;
@@ -537,15 +536,15 @@ h6 {
   background: #08ADA7;
   z-index: 333;
   position: fixed;
-  bottom: 75px;
+  bottom: 35px;
   left: 50%;
   margin-left: -150px;
 }
-/* line 177, ../sass/partials/mobile/header.scss */
+/* line 176, ../sass/partials/mobile/header.scss */
 #header .header__bot .header__become-partner.visible {
   display: block !important;
 }
-/* line 181, ../sass/partials/mobile/header.scss */
+/* line 180, ../sass/partials/mobile/header.scss */
 #header .header__bot .hamburger {
   float: right;
   width: 29px;
@@ -557,12 +556,12 @@ h6 {
   background-size: 29px;
   background-image: url(../images/menu.png);
 }
-/* line 191, ../sass/partials/mobile/header.scss */
+/* line 190, ../sass/partials/mobile/header.scss */
 #header .header__bot .hamburger.active {
   background-size: 26px;
   background-image: url(../images/cancel.png);
 }
-/* line 196, ../sass/partials/mobile/header.scss */
+/* line 195, ../sass/partials/mobile/header.scss */
 #header .header__bot .header__become-partner {
   display: none;
   width: 300px;
@@ -584,17 +583,17 @@ h6 {
   font-family: 'Open Sans', sans-serif;
   margin-right: 10px;
 }
-/* line 206, ../sass/partials/mobile/header.scss */
+/* line 205, ../sass/partials/mobile/header.scss */
 #header .header__bot .header__become-partner:hover {
   background: #fff !important;
   color: #08ADA7;
   transition: background-color .5s, color .5s;
 }
-/* line 211, ../sass/partials/mobile/header.scss */
+/* line 210, ../sass/partials/mobile/header.scss */
 #header .header__bot .header__become-partner.visible {
   display: block !important;
 }
-/* line 213, ../sass/partials/mobile/header.scss */
+/* line 212, ../sass/partials/mobile/header.scss */
 #header .header__bot .header__entered {
   float: right;
   padding: 0 40px 0 0;
@@ -602,7 +601,7 @@ h6 {
   margin-top: 22px;
   display: none;
 }
-/* line 219, ../sass/partials/mobile/header.scss */
+/* line 218, ../sass/partials/mobile/header.scss */
 #header .header__bot .header__entered .entered__button {
   color: #000;
   font-size: 16px;
@@ -613,7 +612,7 @@ h6 {
   font-family: 'Open Sans', sans-serif;
   font-size: 0;
 }
-/* line 225, ../sass/partials/mobile/header.scss */
+/* line 224, ../sass/partials/mobile/header.scss */
 #header .header__bot .header__entered .entered__button:after, #header .header__bot .header__entered .entered__button:before {
   content: "";
   display: block;
@@ -629,7 +628,7 @@ h6 {
   -o-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-/* line 232, ../sass/partials/mobile/header.scss */
+/* line 231, ../sass/partials/mobile/header.scss */
 #header .header__bot .header__entered .entered__button:after {
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
@@ -638,7 +637,7 @@ h6 {
   transform: rotate(-45deg);
   right: -25px;
 }
-/* line 237, ../sass/partials/mobile/header.scss */
+/* line 236, ../sass/partials/mobile/header.scss */
 #header .header__bot .header__entered .entered__menu {
   display: block;
   position: absolute;
@@ -659,7 +658,7 @@ h6 {
   min-width: 124px;
   display: none;
 }
-/* line 248, ../sass/partials/mobile/header.scss */
+/* line 247, ../sass/partials/mobile/header.scss */
 #header .header__bot .header__entered .entered__menu a {
   display: block;
   color: #000;
@@ -669,33 +668,33 @@ h6 {
   font-family: "Open Sans", sans-serif;
   padding: 10px 20px;
 }
-/* line 253, ../sass/partials/mobile/header.scss */
+/* line 252, ../sass/partials/mobile/header.scss */
 #header .header__bot .header__entered .entered__menu a:hover {
   background: #e4e4e4;
 }
-/* line 259, ../sass/partials/mobile/header.scss */
+/* line 258, ../sass/partials/mobile/header.scss */
 #header .header__bot .header__entered.active .entered__menu {
   z-index: 4;
   display: block;
 }
-/* line 266, ../sass/partials/mobile/header.scss */
+/* line 265, ../sass/partials/mobile/header.scss */
 #header .header__bot .header_cart {
   float: right;
   width: 30px;
   height: 100%;
   display: none;
 }
-/* line 271, ../sass/partials/mobile/header.scss */
+/* line 270, ../sass/partials/mobile/header.scss */
 #header .header__bot .header_cart .cart-notification {
   position: absolute;
   width: auto;
   display: none;
 }
-/* line 276, ../sass/partials/mobile/header.scss */
+/* line 275, ../sass/partials/mobile/header.scss */
 #header .header__bot .header_cart .cart_widget_holder {
   display: block;
 }
-/* line 279, ../sass/partials/mobile/header.scss */
+/* line 278, ../sass/partials/mobile/header.scss */
 #header .header__bot .header_cart .icon {
   display: block;
   display: block;
@@ -705,13 +704,13 @@ h6 {
   margin: 27px 0 0 0;
   position: relative;
 }
-/* line 288, ../sass/partials/mobile/header.scss */
+/* line 287, ../sass/partials/mobile/header.scss */
 #header .header__bot .header_cart .icon:before {
   position: absolute;
   left: 5px;
   top: 15px;
 }
-/* line 293, ../sass/partials/mobile/header.scss */
+/* line 292, ../sass/partials/mobile/header.scss */
 #header .header__bot .header_cart .icon:after {
   content: "";
   display: block;
@@ -728,7 +727,7 @@ h6 {
   bottom: 4px;
   opacity: 0;
 }
-/* line 301, ../sass/partials/mobile/header.scss */
+/* line 300, ../sass/partials/mobile/header.scss */
 #header .header__bot .header_cart .icon .cart-wrap {
   border-radius: 100%;
   background-color: #08ada7;
@@ -746,7 +745,7 @@ h6 {
   transform: translateY(-50%);
   margin-top: -6px;
 }
-/* line 317, ../sass/partials/mobile/header.scss */
+/* line 316, ../sass/partials/mobile/header.scss */
 #header .header__bot .header_cart .icon .cart-wrap:before {
   border-color: transparent #08ada7 transparent;
   border-style: solid solid solid none;
@@ -759,11 +758,11 @@ h6 {
   width: 0;
   z-index: -1;
 }
-/* line 331, ../sass/partials/mobile/header.scss */
+/* line 330, ../sass/partials/mobile/header.scss */
 #header .header__bot .header_cart .icon:hover:after {
   opacity: 1;
 }
-/* line 336, ../sass/partials/mobile/header.scss */
+/* line 335, ../sass/partials/mobile/header.scss */
 #header .header__bot .header_cart .widget_shopping_cart, #header .header__bot .header_cart .wooocommerce {
   clear: both;
   display: none;
@@ -779,7 +778,7 @@ h6 {
   -ms-transition: top 0.1s ease-out;
   transition: top 0.1s ease-out;
 }
-/* line 350, ../sass/partials/mobile/header.scss */
+/* line 349, ../sass/partials/mobile/header.scss */
 #header .header__bot .header_cart .widget_shopping_cart .widget_shopping_cart_content, #header .header__bot .header_cart .wooocommerce .widget_shopping_cart_content {
   position: absolute;
   top: 0;
@@ -791,7 +790,7 @@ h6 {
   -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
   -o-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
 }
-/* line 360, ../sass/partials/mobile/header.scss */
+/* line 359, ../sass/partials/mobile/header.scss */
 #header .header__bot .header_cart .widget_shopping_cart .widget_shopping_cart_content:before, #header .header__bot .header_cart .wooocommerce .widget_shopping_cart_content:before {
   content: "";
   display: block;
@@ -802,21 +801,21 @@ h6 {
   border-left: 6px solid transparent;
   border-right: 6px solid transparent;
 }
-/* line 370, ../sass/partials/mobile/header.scss */
+/* line 369, ../sass/partials/mobile/header.scss */
 #header .header__bot .header_cart .widget_shopping_cart .widget_shopping_cart_content p, #header .header__bot .header_cart .wooocommerce .widget_shopping_cart_content p {
   margin-left: 10px;
 }
-/* line 372, ../sass/partials/mobile/header.scss */
+/* line 371, ../sass/partials/mobile/header.scss */
 #header .header__bot .header_cart .widget_shopping_cart .widget_shopping_cart_content p.total, #header .header__bot .header_cart .wooocommerce .widget_shopping_cart_content p.total {
   color: #f0f0f0;
   padding: 10px 0;
   border: none !important;
 }
-/* line 378, ../sass/partials/mobile/header.scss */
+/* line 377, ../sass/partials/mobile/header.scss */
 #header .header__bot .header_cart .widget_shopping_cart .widget_shopping_cart_content ul, #header .header__bot .header_cart .wooocommerce .widget_shopping_cart_content ul {
   padding-bottom: 10px;
 }
-/* line 380, ../sass/partials/mobile/header.scss */
+/* line 379, ../sass/partials/mobile/header.scss */
 #header .header__bot .header_cart .widget_shopping_cart .widget_shopping_cart_content ul li, #header .header__bot .header_cart .wooocommerce .widget_shopping_cart_content ul li {
   color: #f0f0f0;
   font-size: 14px;
@@ -827,7 +826,7 @@ h6 {
   min-height: 38px;
   min-width: 186px;
 }
-/* line 389, ../sass/partials/mobile/header.scss */
+/* line 388, ../sass/partials/mobile/header.scss */
 #header .header__bot .header_cart .widget_shopping_cart .widget_shopping_cart_content ul li:after, #header .header__bot .header_cart .wooocommerce .widget_shopping_cart_content ul li:after {
   content: "";
   display: block;
@@ -838,7 +837,7 @@ h6 {
   left: 0;
   bottom: 0;
 }
-/* line 395, ../sass/partials/mobile/header.scss */
+/* line 394, ../sass/partials/mobile/header.scss */
 #header .header__bot .header_cart .widget_shopping_cart .widget_shopping_cart_content ul li .custom-thumb, #header .header__bot .header_cart .wooocommerce .widget_shopping_cart_content ul li .custom-thumb {
   background: #fff;
   border: 1px solid rgba(0, 0, 0, 0.06);
@@ -862,7 +861,7 @@ h6 {
   left: 10px;
   top: 10px;
 }
-/* line 418, ../sass/partials/mobile/header.scss */
+/* line 417, ../sass/partials/mobile/header.scss */
 #header .header__bot .header_cart .widget_shopping_cart .widget_shopping_cart_content ul li .remove, #header .header__bot .header_cart .wooocommerce .widget_shopping_cart_content ul li .remove {
   float: right;
   color: #fff !important;
@@ -881,22 +880,22 @@ h6 {
   right: 6px;
   left: auto !important;
 }
-/* line 431, ../sass/partials/mobile/header.scss */
+/* line 430, ../sass/partials/mobile/header.scss */
 #header .header__bot .header_cart .widget_shopping_cart .widget_shopping_cart_content ul li .remove:hover, #header .header__bot .header_cart .wooocommerce .widget_shopping_cart_content ul li .remove:hover {
   color: #e4e4e4 !important;
 }
-/* line 435, ../sass/partials/mobile/header.scss */
+/* line 434, ../sass/partials/mobile/header.scss */
 #header .header__bot .header_cart .widget_shopping_cart .widget_shopping_cart_content ul li .quantity, #header .header__bot .header_cart .wooocommerce .widget_shopping_cart_content ul li .quantity {
   display: block;
   position: relative;
   left: -64px;
   top: 10px;
 }
-/* line 441, ../sass/partials/mobile/header.scss */
+/* line 440, ../sass/partials/mobile/header.scss */
 #header .header__bot .header_cart .widget_shopping_cart .widget_shopping_cart_content ul li:hover, #header .header__bot .header_cart .wooocommerce .widget_shopping_cart_content ul li:hover {
   background: rgba(255, 255, 255, 0.1);
 }
-/* line 448, ../sass/partials/mobile/header.scss */
+/* line 447, ../sass/partials/mobile/header.scss */
 #header .header__bot .header_cart .widget_shopping_cart .buttons a, #header .header__bot .header_cart .wooocommerce .buttons a {
   margin: 5px 0;
   line-height: 1;
@@ -923,12 +922,12 @@ h6 {
   -o-transition-duration: 300ms;
   transition-duration: 300ms;
 }
-/* line 469, ../sass/partials/mobile/header.scss */
+/* line 468, ../sass/partials/mobile/header.scss */
 #header .header__bot .header_cart .widget_shopping_cart .buttons a:hover, #header .header__bot .header_cart .wooocommerce .buttons a:hover {
   background: #777777;
 }
 
-/* line 479, ../sass/partials/mobile/header.scss */
+/* line 478, ../sass/partials/mobile/header.scss */
 #header .header__bot #nav li:hover {
   background-color: transparent !important;
 }
