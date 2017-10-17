@@ -5,7 +5,7 @@ $('.header__bot .hamburger').click(function(){
     $('#nav').toggleClass('active');
     $('.login-link').toggleClass('visible')
     $('.header__become-partner').toggleClass('visible')
-    
+    $('.header__bot .layout').toggleClass('max-height')
     if($(window).width() < 768) {
         $('#main').toggleClass('hidden');
     }
