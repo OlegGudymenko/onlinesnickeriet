@@ -5,23 +5,31 @@ $('#tabs').on('click', function(ev) {
       var selectedTab = $this.text();
 
       if($this.parent().find('.inner').hasClass('show')){
+
         $this.parent().find('.inner').removeClass('show').slideUp(350);
 
-        // $this.parents('#tabs').find('>li:not(.active)').slideToggle()
-        // $this.parents('#tabs').find('>li.active').find('p').slideToggle()
+        if( !$this.parent().hasClass('active') ){
           $this.parent().removeClass('active');
+        }
       } else {
-        $this.closest('#tabs').find('li .inner').removeClass('show').slideUp(350);
-        $this.closest('#tabs').children('li.active').removeClass('active');
-        $this.parent().find('.inner').addClass('show').slideDown(350);
-        $this.parent().addClass('active');
-        // $this.parents('#tabs').find('>li:not(.active)').slideToggle()
-        // $('.list__title').text( selectedTab )
-        // $this.parents('#tabs').find('>li.active').find('p').slideUp(350)
+        if( $this.parent().hasClass('active') ){
+             $this.closest('#tabs').find('li .inner').addClass('show').slideUp(350);
+             $this.parent().find('.inner').addClass('show').  slideDown(350);
+        }else{
+          $this.closest('#tabs').find('li .inner').removeClass('show').slideUp(350);
+          $this.closest('#tabs').children('li.active').removeClass('active');
+          $this.parent().find('.inner').addClass('show').slideDown(350);
+          $this.parent().addClass('active');
+        }
       }
 
     } else if ( target.tagName === 'LI' && target.parentElement.className == 'inner show' ) {
       $('.inner .active').removeClass('active');
+       if($(window).width() < 768) {
+        $('.inner').slideUp(350);
+        $('.inner').removeClass('show')
+        $('#tabs').slideUp(350);
+      }
       $(target).addClass('active');
 
     }
