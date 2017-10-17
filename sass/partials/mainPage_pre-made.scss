@@ -103,16 +103,18 @@
             display: none;
           }
           &.buy-now-btn{
-            position: absolute ;
-            top:10px;
-            right: 10px; 
-            background-color: #FFF ;
-            margin:0!important;
+            left: auto;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: #FFF;
+            margin: 0 !important;
             width: 141px;
             height: 35px;
+            color: #08ADA7;
             line-height: 35px;
             @media (max-width: $wml){
-              display:none;
+              // display:none;
             }
           }
           &:hover{
