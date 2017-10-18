@@ -1206,6 +1206,10 @@ h6 {
   text-align: left;
   display: block;
 }
+/* line 45, ../sass/partials/mobile/mainPage.scss */
+#main .main__text__closeable p .bold {
+  color: #555555;
+}
 /* line 48, ../sass/partials/mobile/mainPage.scss */
 #main .main__text__closeable p.mobile-text {
   display: block;
@@ -1708,8 +1712,8 @@ h6 {
 /* line 36, ../sass/partials/mobile/mainPage_pre-made.scss */
 #main .main__pre-made .pre-made__list li .li__title {
   color: #000;
-  font-size: 20px;
-  font-weight: 400;
+  font-size: 22px;
+  font-weight: 600;
   text-align: left;
   color: #555555;
   display: inline-block;
@@ -4709,6 +4713,11 @@ h6 {
 }
 
 /* line 150, ../sass/partials/mobile/customConstructor.scss */
+.modal-content #design-frasa .pull-right {
+  float: left !important;
+}
+
+/* line 153, ../sass/partials/mobile/customConstructor.scss */
 #design-action-options, #design-action-legs {
   display: block;
   width: 100%;
@@ -4720,31 +4729,31 @@ h6 {
   background-color: #ffffff;
   margin: 6px 0;
 }
-/* line 157, ../sass/partials/mobile/customConstructor.scss */
+/* line 160, ../sass/partials/mobile/customConstructor.scss */
 #design-action-options i, #design-action-legs i {
   display: none;
 }
 
-/* line 161, ../sass/partials/mobile/customConstructor.scss */
+/* line 164, ../sass/partials/mobile/customConstructor.scss */
 #design-actions {
   min-height: 55px !important;
 }
-/* line 163, ../sass/partials/mobile/customConstructor.scss */
+/* line 166, ../sass/partials/mobile/customConstructor.scss */
 #design-actions .portlet-title {
   width: 300px;
 }
 
-/* line 168, ../sass/partials/mobile/customConstructor.scss */
+/* line 171, ../sass/partials/mobile/customConstructor.scss */
 #design-modal-properties .form-group label {
   margin-bottom: 10px;
   display: block !important;
 }
-/* line 172, ../sass/partials/mobile/customConstructor.scss */
+/* line 175, ../sass/partials/mobile/customConstructor.scss */
 #design-modal-properties .form-group input {
   display: inline-block !important;
 }
 
-/* line 176, ../sass/partials/mobile/customConstructor.scss */
+/* line 179, ../sass/partials/mobile/customConstructor.scss */
 #design-action-add {
   display: block;
   width: 300px;
@@ -4764,12 +4773,12 @@ h6 {
   position: relative;
   top: 8px;
 }
-/* line 191, ../sass/partials/mobile/customConstructor.scss */
+/* line 194, ../sass/partials/mobile/customConstructor.scss */
 #design-action-add i {
   display: none;
 }
 
-/* line 195, ../sass/partials/mobile/customConstructor.scss */
+/* line 198, ../sass/partials/mobile/customConstructor.scss */
 #design-action-rensa {
   background-color: transparent;
   border: none;
@@ -4786,30 +4795,30 @@ h6 {
   background-size: 25px;
   background-image: url(../images/cancel-red.png);
 }
-/* line 210, ../sass/partials/mobile/customConstructor.scss */
+/* line 213, ../sass/partials/mobile/customConstructor.scss */
 #design-action-rensa i {
   display: none !important;
 }
 
-/* line 218, ../sass/partials/mobile/customConstructor.scss */
+/* line 221, ../sass/partials/mobile/customConstructor.scss */
 .portlet {
   margin-bottom: 0 !important;
 }
-/* line 220, ../sass/partials/mobile/customConstructor.scss */
+/* line 223, ../sass/partials/mobile/customConstructor.scss */
 .portlet.default {
   background-color: transparent;
 }
-/* line 223, ../sass/partials/mobile/customConstructor.scss */
+/* line 226, ../sass/partials/mobile/customConstructor.scss */
 .portlet > .portlet-title {
   border-bottom: 1px solid transparent !important;
 }
 
-/* line 227, ../sass/partials/mobile/customConstructor.scss */
+/* line 230, ../sass/partials/mobile/customConstructor.scss */
 .table-hover > tbody > tr:hover, .table-hover > tbody > tr:hover > td {
   background: transparent !important;
 }
 
-/* line 230, ../sass/partials/mobile/customConstructor.scss */
+/* line 233, ../sass/partials/mobile/customConstructor.scss */
 .portlet-title.design-btns {
   background: transparent !important;
   display: block;
@@ -4818,32 +4827,32 @@ h6 {
   overflow: hidden !important;
 }
 
-/* line 237, ../sass/partials/mobile/customConstructor.scss */
+/* line 240, ../sass/partials/mobile/customConstructor.scss */
 .caption {
   display: block !important;
   font-size: 18px !important;
   color: #555555 !important;
   padding: 0 5px !important;
 }
-/* line 242, ../sass/partials/mobile/customConstructor.scss */
+/* line 245, ../sass/partials/mobile/customConstructor.scss */
 .caption i {
   color: #555555;
   font-size: 18px;
   margin-right: 20px;
 }
 
-/* line 249, ../sass/partials/mobile/customConstructor.scss */
+/* line 252, ../sass/partials/mobile/customConstructor.scss */
 .table thead, .table tbody {
   float: left;
   border: none;
 }
-/* line 252, ../sass/partials/mobile/customConstructor.scss */
+/* line 255, ../sass/partials/mobile/customConstructor.scss */
 .table thead tr, .table tbody tr {
   float: left;
   border: none;
   background: #fff !important;
 }
-/* line 256, ../sass/partials/mobile/customConstructor.scss */
+/* line 259, ../sass/partials/mobile/customConstructor.scss */
 .table thead tr th, .table thead tr td, .table tbody tr th, .table tbody tr td {
   display: block;
   font-size: 18px;
@@ -4853,16 +4862,16 @@ h6 {
   padding: 0 5px !important;
   border: none !important;
 }
-/* line 270, ../sass/partials/mobile/customConstructor.scss */
+/* line 273, ../sass/partials/mobile/customConstructor.scss */
 .table thead tr th .input-sm, .table thead tr td .input-sm, .table tbody tr th .input-sm, .table tbody tr td .input-sm {
   height: 22px;
 }
-/* line 276, ../sass/partials/mobile/customConstructor.scss */
+/* line 279, ../sass/partials/mobile/customConstructor.scss */
 .table tbody {
   width: 100%;
 }
 
-/* line 281, ../sass/partials/mobile/customConstructor.scss */
+/* line 284, ../sass/partials/mobile/customConstructor.scss */
 .well {
   width: 100%;
   position: relative;
@@ -4880,11 +4889,11 @@ h6 {
   -ms-border-radius: 0;
   border-radius: 0;
 }
-/* line 294, ../sass/partials/mobile/customConstructor.scss */
+/* line 297, ../sass/partials/mobile/customConstructor.scss */
 .well .static-info {
   margin-bottom: 0;
 }
-/* line 296, ../sass/partials/mobile/customConstructor.scss */
+/* line 299, ../sass/partials/mobile/customConstructor.scss */
 .well .static-info .name, .well .static-info .value {
   font-size: 18px;
   font-weight: 600;
@@ -4893,12 +4902,12 @@ h6 {
   display: inline-block;
 }
 
-/* line 305, ../sass/partials/mobile/customConstructor.scss */
+/* line 308, ../sass/partials/mobile/customConstructor.scss */
 #step-0 {
   display: none;
 }
 
-/* line 309, ../sass/partials/mobile/customConstructor.scss */
+/* line 312, ../sass/partials/mobile/customConstructor.scss */
 #design-cart-checkout {
   width: 100%;
   -webkit-border-radius: 0;
@@ -4909,17 +4918,17 @@ h6 {
   position: relative;
   bottom: 15px;
 }
-/* line 315, ../sass/partials/mobile/customConstructor.scss */
+/* line 318, ../sass/partials/mobile/customConstructor.scss */
 #design-cart-checkout i {
   display: none;
 }
 
-/* line 319, ../sass/partials/mobile/customConstructor.scss */
+/* line 322, ../sass/partials/mobile/customConstructor.scss */
 .popover, .popover.tour {
   z-index: 200;
 }
 
-/* line 323, ../sass/partials/mobile/customConstructor.scss */
+/* line 326, ../sass/partials/mobile/customConstructor.scss */
 #design-btn-former {
   border-left: 0;
 }
