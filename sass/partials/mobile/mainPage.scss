@@ -7,13 +7,17 @@
   .main__text-wrap{
     @include block(block, 100%, auto, none);
   }
+  h4.pre-made-title{
+    display: block;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
   .main__text__layout{
     @include block(block, 300px, auto, none);
     margin: 0 auto;
     padding: 0 10px;
     h2{
-      @include text($black, 30px, 600, left);
-      text-transform: uppercase;
+      @include text($black, 22px!important, 600, left);
       display: inline-block;
       text-transform: capitalize;
       position: relative;
@@ -39,17 +43,19 @@
     @include block(block, 100%, auto, none);
     margin: 0;
     position: relative;
-    padding: 16px 0 0 0;
+    padding: 16px 0 60px 0;
     p{
-      @include text($header__top_text, 18px, 400, left);
-      display: none;
+      @include text(#555555, 18px, 400, left);
+      display: block;
       .bold{
-        color: $color;
+        color:#555555;
       }
       &.mobile-text{
         display: block;
         padding-bottom: 60px;
       }
+
+    }
       a{
         position: absolute;
         left: 0;
@@ -62,7 +68,6 @@
         font-weight: 600;
         line-height: 45px;
       }
-    }
   }
   .main__top-things{
     @include block(inline-block, 100%, auto, none);
@@ -202,11 +207,12 @@
     }
   }
   h4{
-    @include text($black, 30px, 600, left);
-    display: inline-block;
-    padding: 14px 0 8px 0;
-    margin-top: 30px;
+    @include text($black, 24px, 600, left);
+    // display: inline-block;
+    padding: 7px 0 11px 0;
+    margin-top: 0;
     border: none;
+    display:none;
   }
   .main__services{
     @include block(inline-block, 100%, auto, $gray);

@@ -10,6 +10,9 @@
     @include block(block, 300px, 100%, none);
     margin: 0 auto;
     padding: 0;
+    &.top{
+      margin: 0 auto 27px;
+    }
     &.center{
       min-height: 100vh;
       @include display(flex);
