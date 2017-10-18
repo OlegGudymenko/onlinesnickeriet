@@ -172,7 +172,7 @@
     }
    .login-link{
         margin-top:0;
-        display:none;
+        display:none!important;
         @include text(#08ada7, 22px,600, center);
         font-family: 'Exo', sans-serif;
         // position: fixed;
@@ -193,7 +193,7 @@
       margin:auto;
       line-height: 45px;
       float:none;
-      background: #08ADA7; 
+      background: #08ADA7;
       z-index: 333;
       // position: fixed;
       // bottom: 35px;
@@ -410,9 +410,9 @@
               font-family: 'Open Sans', sans-serif;
               padding-left: 0;
               position: relative;
-              padding: 6px 20px 20px 78px;
+              padding: 6px 40px 20px 78px;
               min-height: 38px;
-              min-width: 186px;
+              min-width: 166px;
               &:after{
                 @include pseudo-elem(100%, 1px, #f0f0f0);
                 position: absolute;
@@ -464,6 +464,7 @@
                 position: relative;
                 left: -64px;
                 top: 10px;
+                width: 100%;
               }
               &:hover{
                 background: rgba(255,255,255, .1);

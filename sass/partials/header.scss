@@ -166,6 +166,7 @@
           text-align: center;
           padding: 20px 0;
         }
+        &:first-child {display: none;}
         a{
           @include text($black, 16px, 400, center);
           @include block(block, 100%, 100%, none);
@@ -447,9 +448,9 @@
               font-family: 'Open Sans', sans-serif;
               padding-left: 0;
               position: relative;
-              padding: 6px 20px 20px 78px;
+              padding: 6px 40px 20px 78px;
               min-height: 38px;
-              min-width: 186px;
+              min-width: 166px;
               &:after{
                 @include pseudo-elem(100%, 1px, #f0f0f0);
                 position: absolute;
@@ -500,6 +501,7 @@
                 display: block;
                 position: relative;
                 left: -64px;
+                width: 100%;
                 top: 10px;
               }
               &:hover{
