@@ -1,19 +1,19 @@
 /*
-Error: Undefined mixin 'calc'.
-        on line 2 of /home/oleg/Applications/online_snieckeriet/onlinesnickeriet/sass/partials/mainPage.scss, in `calc'
-        from line 2 of /home/oleg/Applications/online_snieckeriet/onlinesnickeriet/sass/partials/mainPage.scss
+Error: Undefined mixin 'block'.
+        on line 2 of /home/oleg/Applications/online_snieckeriet/onlinesnickeriet/sass/partials/blog.scss, in `block'
+        from line 2 of /home/oleg/Applications/online_snieckeriet/onlinesnickeriet/sass/partials/blog.scss
 
-1: #main{
-2:   @include calc(min-height, '100vh - 113px');
-3:   @include block(block, 100%, auto, none);
-4:   padding: 0 0 40px 0;
-5:   padding-top: 113px; //padding for fixed header
-6:   @media (max-width: $wml){
-7:     padding-top: 51px;
+1: .blog{
+2:   @include block(block, 100%, auto, none);
+3:   padding: 20px 0;
+4:   @media (max-width: $wt){
+5:     @include display(flex);
+6:   }
+7:   .blog__content{
 
 Backtrace:
-/home/oleg/Applications/online_snieckeriet/onlinesnickeriet/sass/partials/mainPage.scss:2:in `calc'
-/home/oleg/Applications/online_snieckeriet/onlinesnickeriet/sass/partials/mainPage.scss:2
+/home/oleg/Applications/online_snieckeriet/onlinesnickeriet/sass/partials/blog.scss:2:in `block'
+/home/oleg/Applications/online_snieckeriet/onlinesnickeriet/sass/partials/blog.scss:2
 /usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:349:in `block in visit_mixin'
 /usr/lib/ruby/vendor_ruby/sass/stack.rb:98:in `block in with_mixin'
 /usr/lib/ruby/vendor_ruby/sass/stack.rb:115:in `with_frame'
@@ -70,4 +70,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'calc'.\A         on line 2 of /home/oleg/Applications/online_snieckeriet/onlinesnickeriet/sass/partials/mainPage.scss, in `calc'\A         from line 2 of /home/oleg/Applications/online_snieckeriet/onlinesnickeriet/sass/partials/mainPage.scss\A \A 1: #main{\A 2:   @include calc(min-height, '100vh - 113px');\A 3:   @include block(block, 100%, auto, none);\A 4:   padding: 0 0 40px 0;\A 5:   padding-top: 113px; //padding for fixed header\A 6:   @media (max-width: $wml){\A 7:     padding-top: 51px;"; }
+  content: "Error: Undefined mixin 'block'.\A         on line 2 of /home/oleg/Applications/online_snieckeriet/onlinesnickeriet/sass/partials/blog.scss, in `block'\A         from line 2 of /home/oleg/Applications/online_snieckeriet/onlinesnickeriet/sass/partials/blog.scss\A \A 1: .blog{\A 2:   @include block(block, 100%, auto, none);\A 3:   padding: 20px 0;\A 4:   @media (max-width: $wt){\A 5:     @include display(flex);\A 6:   }\A 7:   .blog__content{"; }

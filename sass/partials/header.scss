@@ -1,9 +1,7 @@
-.max-height{height: 100vh!important ;}
 #header{
   @include block(block, 100%, auto, #fff);
   position: fixed;
   z-index: 999;
-
   .header__top{
     @include block(block, 100%, 34px, $gray);
     border-bottom: 1px solid #e4e4e4;
@@ -51,15 +49,12 @@
   .header__bot{
     @include block(block, 100%, 77px, none);
     border-bottom: 1px solid #e4e4e4;
-    &.active{
-      background-color: #ffffff;
-      border-bottom: 1px solid transparent;
+    @media (max-width: $wds){
     }
     @media (max-width: $wml){
       background: #f0f0f0;
       height: 50px;
     }
-    // .login-link{display: none; }
     .header__logo{
       @include block(inline-block, 291px, 59px, url(../images/logo.png));
       @include background(size, 100%, 100%);
@@ -69,15 +64,15 @@
       &:after{
         content: "beta";
         position: absolute;
-        top: 4px;
+        top: 8px;
         right: 4px;
-        width: 34px;
-        height: 15px;
+        width: 40px;
+        height: 16px;
         color: #fff;
-        background: #08ADA7;
+        background: $color;
         text-align: center;
         line-height: 16px;
-        font-size: 9px;
+        font-size: 11px;
         font-weight: 700;
         text-transform: uppercase;
         font-family: 'Open Sans', sans-serif;
@@ -113,13 +108,11 @@
       margin: 0 0 0 160px;
       @media (max-width: $wds){
         margin-left: 40px;
-        // width: 500px;
-        width:100%;
+        width: 500px;
       }
       @media (max-width: $wt){
         display: none;
-        // width: 260px;
-        width:100%;
+        width: 260px;
         flex-wrap: wrap;
         background: rgba(255,255,255, 1);
         position: absolute;
@@ -142,11 +135,10 @@
         top: 51px;
         right: 0;
         left: auto;
-        overflow: auto;
-        // height:  calc(100vh - 51px);
-         height: calc(100vh - 30%);
+        height: auto;
         padding-top: 0;
         border: none;
+        // @include border-radius(0);
         &.active{
           @include display(flex);
         }
@@ -154,9 +146,6 @@
       li{
         @include block(inline-block, auto, 57px, none);
         line-height: 57px;
-        &:first-child{
-          @media (max-width: $wt){padding: 5px 0 0 0;}
-        }
         @media (max-width: $wt){
           display: block;
           width: 100%;
@@ -165,28 +154,6 @@
           height: 28px;
           margin: 0;
           padding: 10px 16px;
-          &:first-child a{
-            display: block;
-            width: 200px;
-            height: 35px;
-            background: #e4e4e4;
-            -webkit-border-radius: 10px;
-            -moz-border-radius: 10px;
-            -ms-border-radius: 10px;
-            border-radius: 10px;
-            color: #555555;
-            font-size: 18px;
-            font-weight: 400;
-            text-align: center;
-            margin: auto;
-            line-height: 35px;
-            font-family: 'Open Sans', sans-serif;
-            text-indent: 15px;
-            background-repeat: no-repeat;
-            background-size: 26px;
-            background-position: 15% 50%;
-            background-image: url(../images/online-store-shopping-cart.png);
-          }
           &:hover{
             background: rgba(0,0,0,.1);
           }
@@ -197,37 +164,7 @@
           line-height: 1;
           height: auto;
           text-align: center;
-          padding: 6px 0;
-        }
-        .header__basket{
-          display:none;
-          @media (max-width: $wt){
-            @include block(block,  200px,  35px, #e4e4e4);
-            @include border-radius(10px);
-            @include text(#555555, 18px, 400, center);
-            margin:auto;
-            line-height: 35px;
-            font-family: 'Open Sans', sans-serif;
-            text-indent: 15px;
-            background-repeat: no-repeat;
-            background-size: 26px;
-            background-position: 15% 50%;
-            background-image: url(../images/online-store-shopping-cart.png);
-          }
-        }
-        &.partner-btn{
-          display:none;
-          @media (max-width: $wt){
-            margin-top:0;
-            padding-top:0;
-            display:block;
-            a{
-              @include block(block, 300px,45px, #08ada7);
-              @include text(#ffffff, 18px,600, center);
-              margin:auto;
-              line-height: 45px;
-            }
-          }
+          padding: 20px 0;
         }
         a{
           @include text($black, 16px, 400, center);
@@ -286,17 +223,19 @@
     }
     .hamburger{
       float: left;
-      width: 29px;
-      height: 29px;
+      width: 24px;
+      height: 24px;
       display: none;
       margin: 34px 0 0 0;
-      background-repeat: no-repeat;
-      background-position: 50% 50%;
-      background-size: 29px ;
-      background-image: url(../images/menu.png);
-      &.active{
-        background-size: 26px ;
-        background-image: url(../images/cancel.png);
+      .line{
+        @include block(block, 100%, 4px, $black);
+        @include border-radius(2px);
+        margin: 4px 0;
+        @media (max-width: $wml){
+          height: 3px;
+          margin: 0 0 6px 0;
+          border-radius: 30%;
+        }
       }
       @media (max-width: $wt){
         display: block;
@@ -304,7 +243,7 @@
       @media (max-width: $wml){
         float: right;
         width: 29px;
-        margin-top: 13px;
+        margin-top: 16px;
       }
     }
     .header__become-partner{
@@ -323,44 +262,9 @@
         transition: background-color .5s, color .5s;
       }
       @media (max-width: $wml){
-      @include block(none, 300px,45px, #08ada7);
-      @include text(#ffffff, 18px,600, center);
-      margin:auto;
-      line-height: 45px;
-      float:none;
-      background: #08ADA7; 
-      z-index: 333;
-      // position: fixed;
-      // bottom: 35px;
-      position: absolute;
-      bottom: 32px;
-      left: 50%;
-      margin-left: -150px;
-         &.visible{
-          display: block!important ;
-        }
+        display: none;
       }
     }
-    .login-link{
-        display:none;
-        @media (max-width: $wt){
-          margin-top:0;
-          display:none;
-          @include text(#08ada7, 22px,600, center);
-          font-family: 'Exo', sans-serif;
-          // position: fixed;
-          // bottom: 100px;
-          position: absolute;
-          bottom: 87px;
-          width: 300px;
-          left: 50%;
-          margin-left: -150px;
-          text-align: center;
-          &.visible{
-            display: block!important ;
-          }
-        }
-      }
     .header__entered{
       float: right;
       padding: 0 40px 0 0;
@@ -633,10 +537,5 @@
         }
       }
     }
-  }
-}
-#header .header__bot #nav li:hover{
-  @media (max-width: $wt){
-    background-color: transparent!important;
   }
 }

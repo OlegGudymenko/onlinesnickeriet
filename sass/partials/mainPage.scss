@@ -3,7 +3,6 @@
   @include block(block, 100%, auto, none);
   padding: 0 0 40px 0;
   padding-top: 113px; //padding for fixed header
-  &.hidden{display:none;}
   @media (max-width: $wml){
     padding-top: 51px;
   }
@@ -456,6 +455,7 @@
           .image-holder{
             @include block(block, 304px, 174px, none);
             overflow: hidden;
+            position: relative ;
             @media (max-width: $wds){
               max-width: 100%;
               width: auto;

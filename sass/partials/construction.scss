@@ -29,7 +29,7 @@
     clear: left;
     margin: 0 0 60px 0!important;
     min-height: 462px;
-    background: transparent;
+    background: $gray;
     padding: 10px 20px 0 20px;
     @include border-radius(5px);
     @media (max-width: $wt){
@@ -125,7 +125,7 @@
           min-height: 172px;
           position: relative;
           overflow: hidden;
-          margin:0!important;
+          margin: 10px 0!important;
           &:after{
             @include pseudo-elem(30px, 30px, url(../images/active.png) no-repeat);
             position: absolute;
@@ -141,8 +141,8 @@
             top: 0;
           }
           @media (max-width: $wt){
-            @include block(block, 100%, auto, #fff);
-            margin: 0!important;
+            display: inline-block;
+            margin: 10px 34px!important;
           }
           p{
             @include text($black, 20px, 400, left);
