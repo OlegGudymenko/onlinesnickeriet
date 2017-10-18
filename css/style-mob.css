@@ -226,7 +226,7 @@ h6 {
 }
 /* line 13, ../sass/partials/mobile/wrapper.scss */
 #wrapper .layout.top {
-  margin: 0 auto 10px;
+  margin: 0 auto 70px;
 }
 /* line 16, ../sass/partials/mobile/wrapper.scss */
 #wrapper .layout.center {
@@ -1146,6 +1146,12 @@ h6 {
   background: none;
 }
 /* line 10, ../sass/partials/mobile/mainPage.scss */
+#main h4.pre-made-title {
+  display: block;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+/* line 15, ../sass/partials/mobile/mainPage.scss */
 #main .main__text__layout {
   display: block;
   width: 300px;
@@ -1154,7 +1160,7 @@ h6 {
   margin: 0 auto;
   padding: 0 10px;
 }
-/* line 14, ../sass/partials/mobile/mainPage.scss */
+/* line 19, ../sass/partials/mobile/mainPage.scss */
 #main .main__text__layout h2 {
   color: #000;
   font-size: 22px !important;
@@ -1165,7 +1171,7 @@ h6 {
   position: relative;
   padding: 70px 0 0 0;
 }
-/* line 20, ../sass/partials/mobile/mainPage.scss */
+/* line 25, ../sass/partials/mobile/mainPage.scss */
 #main .main__text__layout h2 a {
   color: #000;
   padding: 0;
@@ -1178,7 +1184,7 @@ h6 {
   left: 0;
   top: 14px;
 }
-/* line 30, ../sass/partials/mobile/mainPage.scss */
+/* line 35, ../sass/partials/mobile/mainPage.scss */
 #main .main__text__layout p {
   color: #000;
   font-size: 30px;
@@ -1188,7 +1194,7 @@ h6 {
   margin-left: 50px;
   display: none;
 }
-/* line 37, ../sass/partials/mobile/mainPage.scss */
+/* line 42, ../sass/partials/mobile/mainPage.scss */
 #main .main__text__closeable {
   display: block;
   width: 100%;
@@ -1196,9 +1202,9 @@ h6 {
   background: none;
   margin: 0;
   position: relative;
-  padding: 16px 0 0 0;
+  padding: 16px 0 60px 0;
 }
-/* line 42, ../sass/partials/mobile/mainPage.scss */
+/* line 47, ../sass/partials/mobile/mainPage.scss */
 #main .main__text__closeable p {
   color: #555555;
   font-size: 18px;
@@ -1206,17 +1212,17 @@ h6 {
   text-align: left;
   display: block;
 }
-/* line 45, ../sass/partials/mobile/mainPage.scss */
+/* line 50, ../sass/partials/mobile/mainPage.scss */
 #main .main__text__closeable p .bold {
   color: #555555;
 }
-/* line 48, ../sass/partials/mobile/mainPage.scss */
+/* line 53, ../sass/partials/mobile/mainPage.scss */
 #main .main__text__closeable p.mobile-text {
   display: block;
   padding-bottom: 60px;
 }
-/* line 52, ../sass/partials/mobile/mainPage.scss */
-#main .main__text__closeable p a {
+/* line 59, ../sass/partials/mobile/mainPage.scss */
+#main .main__text__closeable a {
   position: absolute;
   left: 0;
   bottom: 0;
@@ -1228,7 +1234,7 @@ h6 {
   font-weight: 600;
   line-height: 45px;
 }
-/* line 66, ../sass/partials/mobile/mainPage.scss */
+/* line 72, ../sass/partials/mobile/mainPage.scss */
 #main .main__top-things {
   display: inline-block;
   width: 100%;
@@ -1241,11 +1247,11 @@ h6 {
   justify-content: space-between;
   display: none;
 }
-/* line 71, ../sass/partials/mobile/mainPage.scss */
+/* line 77, ../sass/partials/mobile/mainPage.scss */
 #main .main__top-things .top-things__item {
   float: left;
 }
-/* line 73, ../sass/partials/mobile/mainPage.scss */
+/* line 79, ../sass/partials/mobile/mainPage.scss */
 #main .main__top-things .top-things__item a {
   display: block;
   width: 100%;
@@ -1256,12 +1262,12 @@ h6 {
   overflow: hidden;
   margin: 0 auto;
 }
-/* line 79, ../sass/partials/mobile/mainPage.scss */
+/* line 85, ../sass/partials/mobile/mainPage.scss */
 #main .main__top-things .top-things__item a:nth-child(2) {
   position: absolute;
   bottom: 0;
 }
-/* line 83, ../sass/partials/mobile/mainPage.scss */
+/* line 89, ../sass/partials/mobile/mainPage.scss */
 #main .main__top-things .top-things__item a p {
   position: absolute;
   left: 0;
@@ -1280,7 +1286,7 @@ h6 {
   line-height: 60px;
   padding-bottom: 20px;
 }
-/* line 91, ../sass/partials/mobile/mainPage.scss */
+/* line 97, ../sass/partials/mobile/mainPage.scss */
 #main .main__top-things .top-things__item a p .child-text {
   padding: 0 50px;
   color: #fff;
@@ -1295,7 +1301,7 @@ h6 {
   position: relative;
   top: 40px;
 }
-/* line 103, ../sass/partials/mobile/mainPage.scss */
+/* line 109, ../sass/partials/mobile/mainPage.scss */
 #main .main__top-things .top-things__item a .shadow {
   position: absolute;
   left: 0;
@@ -1309,34 +1315,34 @@ h6 {
   -o-transition-duration: 500ms;
   transition-duration: 500ms;
 }
-/* line 113, ../sass/partials/mobile/mainPage.scss */
+/* line 119, ../sass/partials/mobile/mainPage.scss */
 #main .main__top-things .top-things__item a:hover .shadow {
   background: rgba(0, 0, 0, 0.3);
 }
-/* line 119, ../sass/partials/mobile/mainPage.scss */
+/* line 125, ../sass/partials/mobile/mainPage.scss */
 #main .main__top-things .top-things__item.big a {
   width: 647px;
   height: 500px;
 }
-/* line 124, ../sass/partials/mobile/mainPage.scss */
+/* line 130, ../sass/partials/mobile/mainPage.scss */
 #main .main__top-things .top-things__item.small {
   position: relative;
 }
-/* line 126, ../sass/partials/mobile/mainPage.scss */
+/* line 132, ../sass/partials/mobile/mainPage.scss */
 #main .main__top-things .top-things__item.small a {
   width: 333px;
   height: 245px;
 }
-/* line 132, ../sass/partials/mobile/mainPage.scss */
+/* line 138, ../sass/partials/mobile/mainPage.scss */
 #main .main__top-things .top-things__item.small a:nth-child(2) {
   height: 239px;
 }
-/* line 138, ../sass/partials/mobile/mainPage.scss */
+/* line 144, ../sass/partials/mobile/mainPage.scss */
 #main .main__top-things .top-things__item.medium a {
   width: 312px;
   height: 500px;
 }
-/* line 145, ../sass/partials/mobile/mainPage.scss */
+/* line 151, ../sass/partials/mobile/mainPage.scss */
 #main .main__custom-order {
   display: block;
   width: 100%;
@@ -1352,7 +1358,7 @@ h6 {
   overflow: hidden;
   display: none;
 }
-/* line 152, ../sass/partials/mobile/mainPage.scss */
+/* line 158, ../sass/partials/mobile/mainPage.scss */
 #main .main__custom-order a {
   display: block;
   width: 100%;
@@ -1360,7 +1366,7 @@ h6 {
   background: none;
   position: relative;
 }
-/* line 155, ../sass/partials/mobile/mainPage.scss */
+/* line 161, ../sass/partials/mobile/mainPage.scss */
 #main .main__custom-order a .custom-order__text {
   color: #000;
   font-size: 20px;
@@ -1369,12 +1375,12 @@ h6 {
   line-height: 122px;
   font-family: 'Open Sans', sans-serif;
 }
-/* line 159, ../sass/partials/mobile/mainPage.scss */
+/* line 165, ../sass/partials/mobile/mainPage.scss */
 #main .main__custom-order a .custom-order__text .bold {
   font-size: 20px;
   font-weight: 600;
 }
-/* line 164, ../sass/partials/mobile/mainPage.scss */
+/* line 170, ../sass/partials/mobile/mainPage.scss */
 #main .main__custom-order a .custom-order__button {
   color: #fff;
   font-size: 25px;
@@ -1393,7 +1399,7 @@ h6 {
   top: -moz-calc(100% - 60px);
   top: calc(100% - 60px);
 }
-/* line 172, ../sass/partials/mobile/mainPage.scss */
+/* line 178, ../sass/partials/mobile/mainPage.scss */
 #main .main__custom-order a .custom-order__button .child-text {
   display: block;
   color: #fff;
@@ -1407,7 +1413,7 @@ h6 {
   opacity: 0;
   padding: 0 60px 6px 60px;
 }
-/* line 187, ../sass/partials/mobile/mainPage.scss */
+/* line 193, ../sass/partials/mobile/mainPage.scss */
 #main .main__custom-order a .shadow {
   position: absolute;
   left: 0;
@@ -1421,11 +1427,11 @@ h6 {
   -o-transition-duration: 500ms;
   transition-duration: 500ms;
 }
-/* line 197, ../sass/partials/mobile/mainPage.scss */
+/* line 203, ../sass/partials/mobile/mainPage.scss */
 #main .main__custom-order a:hover .shadow {
   background: rgba(0, 0, 0, 0.3);
 }
-/* line 203, ../sass/partials/mobile/mainPage.scss */
+/* line 209, ../sass/partials/mobile/mainPage.scss */
 #main h4 {
   color: #000;
   font-size: 24px;
@@ -1436,7 +1442,7 @@ h6 {
   border: none;
   display: none;
 }
-/* line 211, ../sass/partials/mobile/mainPage.scss */
+/* line 217, ../sass/partials/mobile/mainPage.scss */
 #main .main__services {
   display: inline-block;
   width: 100%;
@@ -1445,27 +1451,27 @@ h6 {
   padding: 40px 0 30px 0;
   display: none;
 }
-/* line 215, ../sass/partials/mobile/mainPage.scss */
+/* line 221, ../sass/partials/mobile/mainPage.scss */
 #main .main__services .services__title {
   color: #000;
   font-size: 25px;
   font-weight: 600;
   text-align: left;
 }
-/* line 218, ../sass/partials/mobile/mainPage.scss */
+/* line 224, ../sass/partials/mobile/mainPage.scss */
 #main .main__services .services__content {
   display: block;
   width: 100%;
   height: auto;
   background: none;
 }
-/* line 220, ../sass/partials/mobile/mainPage.scss */
+/* line 226, ../sass/partials/mobile/mainPage.scss */
 #main .main__services .services__content .content__left {
   float: left;
   width: 662px;
   padding-bottom: 46px;
 }
-/* line 224, ../sass/partials/mobile/mainPage.scss */
+/* line 230, ../sass/partials/mobile/mainPage.scss */
 #main .main__services .services__content .content__left .left__media {
   display: block;
   width: 658px;
@@ -1474,14 +1480,14 @@ h6 {
   border: 2px solid #e4e4e4;
   margin: 46px 0 35px 0;
 }
-/* line 229, ../sass/partials/mobile/mainPage.scss */
+/* line 235, ../sass/partials/mobile/mainPage.scss */
 #main .main__services .services__content .content__left .left__text {
   display: block;
   width: 100%;
   height: auto;
   background: none;
 }
-/* line 231, ../sass/partials/mobile/mainPage.scss */
+/* line 237, ../sass/partials/mobile/mainPage.scss */
 #main .main__services .services__content .content__left .left__text h5 {
   color: #000;
   font-size: 25px;
@@ -1489,7 +1495,7 @@ h6 {
   text-align: left;
   margin-bottom: 30px;
 }
-/* line 235, ../sass/partials/mobile/mainPage.scss */
+/* line 241, ../sass/partials/mobile/mainPage.scss */
 #main .main__services .services__content .content__left .left__text p {
   color: #777777;
   font-size: 16px;
@@ -1499,7 +1505,7 @@ h6 {
   font-family: 'Open Sans', sans-serif;
   padding-right: 40px;
 }
-/* line 241, ../sass/partials/mobile/mainPage.scss */
+/* line 247, ../sass/partials/mobile/mainPage.scss */
 #main .main__services .services__content .content__left .left__text a {
   color: #08ADA7;
   font-size: 16px;
@@ -1519,12 +1525,12 @@ h6 {
   transition-duration: 500ms;
   font-family: 'Open Sans', sans-serif;
 }
-/* line 249, ../sass/partials/mobile/mainPage.scss */
+/* line 255, ../sass/partials/mobile/mainPage.scss */
 #main .main__services .services__content .content__left .left__text a:hover {
   background: #08ADA7;
   color: #fff;
 }
-/* line 256, ../sass/partials/mobile/mainPage.scss */
+/* line 262, ../sass/partials/mobile/mainPage.scss */
 #main .main__services .services__content .content__right {
   float: right;
   width: 644px;
@@ -1536,7 +1542,7 @@ h6 {
   flex-wrap: wrap;
   padding: 16px 0 0 0;
 }
-/* line 263, ../sass/partials/mobile/mainPage.scss */
+/* line 269, ../sass/partials/mobile/mainPage.scss */
 #main .main__services .services__content .content__right .right__item {
   float: left;
   width: 304px;
@@ -1544,7 +1550,7 @@ h6 {
   min-height: 340px;
   position: relative;
 }
-/* line 270, ../sass/partials/mobile/mainPage.scss */
+/* line 276, ../sass/partials/mobile/mainPage.scss */
 #main .main__services .services__content .content__right .right__item .image-holder {
   display: block;
   width: 304px;
@@ -1552,7 +1558,7 @@ h6 {
   background: none;
   overflow: hidden;
 }
-/* line 274, ../sass/partials/mobile/mainPage.scss */
+/* line 280, ../sass/partials/mobile/mainPage.scss */
 #main .main__services .services__content .content__right .right__item .container__title {
   color: #000;
   font-size: 20px;
@@ -1561,7 +1567,7 @@ h6 {
   margin-top: 12px;
   font-family: 'Open Sans', sans-serif;
 }
-/* line 279, ../sass/partials/mobile/mainPage.scss */
+/* line 285, ../sass/partials/mobile/mainPage.scss */
 #main .main__services .services__content .content__right .right__item .container__text {
   color: #777777;
   font-size: 16px;
@@ -1572,7 +1578,7 @@ h6 {
   bottom: 6px;
   font-family: 'Open Sans', sans-serif;
 }
-/* line 288, ../sass/partials/mobile/mainPage.scss */
+/* line 294, ../sass/partials/mobile/mainPage.scss */
 #main .main__services .services__content .content__bottom {
   display: inline-block;
   width: 100%;
@@ -1583,7 +1589,7 @@ h6 {
   cursor: pointer;
   position: relative;
 }
-/* line 296, ../sass/partials/mobile/mainPage.scss */
+/* line 302, ../sass/partials/mobile/mainPage.scss */
 #main .main__services .services__content .content__bottom .bg {
   display: block;
   width: -ms-calc(100% - 2px);
@@ -1610,7 +1616,7 @@ h6 {
   -o-transition-duration: 300ms;
   transition-duration: 300ms;
 }
-/* line 308, ../sass/partials/mobile/mainPage.scss */
+/* line 314, ../sass/partials/mobile/mainPage.scss */
 #main .main__services .services__content .content__bottom h5 {
   color: #000;
   font-size: 25px;
@@ -1619,7 +1625,7 @@ h6 {
   position: relative;
   z-index: 2;
 }
-/* line 313, ../sass/partials/mobile/mainPage.scss */
+/* line 319, ../sass/partials/mobile/mainPage.scss */
 #main .main__services .services__content .content__bottom p {
   color: #000;
   font-size: 20px;
@@ -1629,7 +1635,7 @@ h6 {
   position: relative;
   z-index: 2;
 }
-/* line 319, ../sass/partials/mobile/mainPage.scss */
+/* line 325, ../sass/partials/mobile/mainPage.scss */
 #main .main__services .services__content .content__bottom a {
   display: block;
   width: 100%;
@@ -1640,7 +1646,7 @@ h6 {
   top: 0;
   z-index: 2;
 }
-/* line 327, ../sass/partials/mobile/mainPage.scss */
+/* line 333, ../sass/partials/mobile/mainPage.scss */
 #main .main__services .services__content .content__bottom:hover .bg {
   -webkit-transform: scale(1);
   -moz-transform: scale(1);
@@ -1684,7 +1690,7 @@ h6 {
   border: 2px solid #e4e4e4;
   margin: 0 0 20px 0 !important;
   margin-right: 62px;
-  padding: 40px 0 48px 0;
+  padding: 0px 0 80px 0;
   position: relative;
 }
 /* line 20, ../sass/partials/mobile/mainPage_pre-made.scss */
@@ -1719,7 +1725,7 @@ h6 {
   display: inline-block;
   position: absolute;
   left: 10px;
-  top: 235px;
+  top: 252px;
   padding: 0;
   width: 276px;
 }
@@ -2243,7 +2249,7 @@ h6 {
   margin: 0 !important;
   background: transparent;
   padding: 0;
-  border: 0;
+  border: 1px solid #00b1a9;
   border-top: none;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
